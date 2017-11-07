@@ -11,7 +11,7 @@ int main(void)
   t_class *c;
 
   //NOTE that the name specified in class_new() first arg must be the same as the external filename
-  c = class_new("ibt~", (method)MarMax_new, (method)dsp_free, (long)sizeof(t_MarMax), (method)0L, A_GIMME, 0);
+  c = class_new("ibt2~", (method)MarMax_new, (method)dsp_free, (long)sizeof(t_MarMax), (method)0L, A_GIMME, 0);
 
   class_addmethod(c, (method)MarMax_float,		"float",	A_FLOAT, 0);
   class_addmethod(c, (method)MarMax_dsp,		"dsp",		A_CANT, 0);
