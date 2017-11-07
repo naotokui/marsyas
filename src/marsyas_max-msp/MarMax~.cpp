@@ -61,7 +61,7 @@ t_int *MarMax_perform(t_int *w)
   int i;
   bool Nozero = false;
   realvec output_realvec;
-  int output_tempo, curMedianTempo = 0;
+  double output_tempo, curMedianTempo = 0;
 
   //to check if input is empty -> don't know exactly why when no input is loaded
   //into Marsystem the network stucks in steady-state
@@ -100,11 +100,12 @@ t_int *MarMax_perform(t_int *w)
         output_realvec = x->m_MarsyasNetwork->getControl("Series/featureNetwork/FlowThru/beattracker/mrs_realvec/innerOut")->to<mrs_realvec>();
 
         // Get the data out of the network -> median tempo
-        output_tempo = (int) x->m_MarsyasNetwork->getControl("Series/featureNetwork/FlowThru/beattracker/BeatTimesSink/sink/mrs_natural/curMedianTempo")->to<mrs_natural>();
+        output_tempo = (double) x->m_MarsyasNetwork->getControl("Series/featureNetwork/FlowThru/beattracker/BeatTimesSink/sink/mrs_real/tempo")->to<mrs_real>();
         if(output_tempo > 0) curMedianTempo = output_tempo;
+//        post("output_tempo: %f", output_tempo);
 
         //post("tempo: %d", curMedianTempo);
-        outlet_int(x->outletTempo, curMedianTempo); // signal outlet (note "signal" rather than NULL)
+        outlet_float(x->outletTempo, curMedianTempo); // signal outlet (note "signal" rather than NULL)
 
         //post("output vector copied");
 
@@ -161,6 +162,7 @@ void *MarMax_new(t_symbol *s, long argc, t_atom *argv)
   if (x = ((t_MarMax *)object_alloc((t_class*)MarMax_class)))
   {
     object_post((t_object *)x, "v1.0 - implemented by João Lobato Oliveira from the SMCGroup at INESC Porto, Portugal (smc.inescporto.pt)", s->s_name);
+      object_post((t_object *)x, "modified by nao tokui",  s->s_name);
     //object_post((t_object *)x, "a new %s object was instantiated: 0x%X", s->s_name, x);
     //object_post((t_object *)x, "%s has %ld arguments", s->s_name, argc);
 
@@ -218,7 +220,7 @@ void *MarMax_new(t_symbol *s, long argc, t_atom *argv)
       }
       else
       {
-        object_post((t_object *)x, "usage is ibt~ [@winSize #] [@hopSize #] [@inductionTime #] [@minBPM #] [@maxBPM #] [@stateRecovery] [@outPathName #]");
+        object_post((t_object *)x, "usage is ibt2~ [@winSize #] [@hopSize #] [@inductionTime #] [@minBPM #] [@maxBPM #] [@stateRecovery] [@outPathName #]");
         argc = 0;
       }
     }
@@ -228,7 +230,7 @@ void *MarMax_new(t_symbol *s, long argc, t_atom *argv)
     //x->ob.z_misc = Z_NO_INPLACE;
     dsp_setup((t_pxobject *)x, 1);	// MSP inlets: arg is # of inlets and is REQUIRED!
     // use 0 if you don't need inlets
-    x->outletTempo = intout(x); // int outlet for tempo
+    x->outletTempo = floatout(x); // int outlet for tempo
     x->outletBeat = bangout(x);	//an outlet that can only output bangs (nothing else)
 
     //post("winSize: %d; hopSize: %d; fs: %f; inductionTime: %f; minBPM: %d, maxBPM: %d; outPathName: %s",

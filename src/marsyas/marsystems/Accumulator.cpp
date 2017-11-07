@@ -189,7 +189,7 @@ Accumulator::myProcess(realvec& in, realvec& out)
 #ifdef MARSYAS_LOG_DIAGNOSTICS
     if (!ctrl_flush_->to<mrs_bool>())
     {
-      MRWDIAG("Accumulator::myProcess() - maxTimes reached without a flush event!");
+//      MRWDIAG("Accumulator::myProcess() - maxTimes reached without a flush event!");
     }
 #endif
 

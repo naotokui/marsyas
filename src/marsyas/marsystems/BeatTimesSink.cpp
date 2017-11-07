@@ -54,7 +54,7 @@ BeatTimesSink::BeatTimesSink(const BeatTimesSink& a) : MarSystem(a)
   ctrl_destFileName_ = getctrl("mrs_string/destFileName");
   ctrl_mode_ = getctrl("mrs_string/mode");
   ctrl_tickCount_ = getctrl("mrs_natural/tickCount");
-  ctrl_curMedianTempo_ = getctrl("mrs_natural/curMedianTempo");
+  ctrl_curMedianTempo_ = getctrl("mrs_real/curMedianTempo");
   ctrl_adjustment_ = getctrl("mrs_natural/adjustment");
   ctrl_bestFinalAgentHistory_= getctrl("mrs_realvec/bestFinalAgentHistory");
   ctrl_soundFileSize_= getctrl("mrs_natural/soundFileSize");
@@ -100,7 +100,7 @@ BeatTimesSink::addControls()
   addctrl("mrs_string/destFileName", "output", ctrl_destFileName_);
   addctrl("mrs_string/mode", "beats+tempo", ctrl_destFileName_);
   setctrlState("mrs_string/mode", true);
-  addctrl("mrs_natural/curMedianTempo", 0, ctrl_curMedianTempo_);
+  addctrl("mrs_real/curMedianTempo", 0, ctrl_curMedianTempo_);
   addctrl("mrs_natural/adjustment", 0, ctrl_adjustment_);
   setctrlState("mrs_natural/adjustment", true);
   addctrl("mrs_realvec/bestFinalAgentHistory", realvec(), ctrl_bestFinalAgentHistory_);
@@ -247,7 +247,7 @@ BeatTimesSink::myProcess(realvec& in, realvec& out)
         }
 
         //curMedianTempo = (mrs_natural) (ibiBPMVec_((mrs_natural)(beatCount_ / 2.0)) + 0.5);
-        mrs_natural curMedianTempo;
+        mrs_real curMedianTempo;
         mrs_realvec tempoVecMedian_(1);
         if(tempoVec_.size() > 10)
         {
@@ -266,11 +266,10 @@ BeatTimesSink::myProcess(realvec& in, realvec& out)
             tempoVecMedian_(s) = tempoVec_.at(s);
 
         }
-        curMedianTempo = (mrs_natural) tempoVecMedian_.median();
-
-        //cout << "Beat at: " << beatTime_ << " (s) - " << curMedianTempo << " (BPMs)" << endl;
-
-        updControl(ctrl_curMedianTempo_, curMedianTempo);
+        curMedianTempo = (mrs_real) tempoVecMedian_.median();
+//        cout << "Beat at: " << beatTime_ << " (s) - " << curMedianTempo << " (BPMs)" << endl;
+        updControl(ctrl_tempo_, curMedianTempo);
+//        updControl(ctrl_curMedianTempo_, curMedianTempo, NOUPDATE);
 
         fstream outStream;
         fstream outStream2;
@@ -344,9 +343,9 @@ BeatTimesSink::myProcess(realvec& in, realvec& out)
           {
             addMedianVector(ibiBPM_);
 
-            mrs_natural output;
-            output = (mrs_natural) (ibiBPMVec_((mrs_natural)(beatCount_ / 2.0)) + 0.5);
-            ctrl_tempo_->setValue(output * 1.0, NOUPDATE);
+            mrs_real output;
+            output = (mrs_real) (ibiBPMVec_((mrs_natural)(beatCount_ / 2.0)) + 0.5);
+//            ctrl_tempo_->setValue(output * 1.0, NOUPDATE);
 
             /*
               if(beatCount_ % 2 == 0)
