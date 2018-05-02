@@ -68,7 +68,7 @@ Histogram::myUpdate(MarControlPtr sender)
   ctrl_onSamples_->setValue(ctrl_histoSize_->to<mrs_natural>(),  NOUPDATE);
   // ctrl_onSamples_->setValue(ctrl_inSamples_->to<mrs_natural>(), NOUPDATE);
   ctrl_onObservations_->setValue(ctrl_inObservations_->to<mrs_natural>(), NOUPDATE);
-    ctrl_osrate_->setValue(ctrl_israte_->to<mrs_real>() / ctrl_inSamples_->to<mrs_natural>());
+  ctrl_osrate_->setValue(ctrl_israte_->to<mrs_real>() / ctrl_inSamples_->to<mrs_natural>());
   
 }
 
