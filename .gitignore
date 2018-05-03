@@ -12,5 +12,13 @@
 *.ogg
 *.au
 *.mp3
-build/
 builddebug/
+build/bin/
+build/CMakeFiles/
+build/CMakeScripts/
+build/doc/
+
+build/marsyas.build/
+
+
+build/src/marsyas/marsyas.build/
