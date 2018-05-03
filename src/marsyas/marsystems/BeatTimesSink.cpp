@@ -61,6 +61,8 @@ BeatTimesSink::BeatTimesSink(const BeatTimesSink& a) : MarSystem(a)
   ctrl_nonCausal_ = getctrl("mrs_bool/nonCausal");
   ctrl_socketsPort_ = getctrl("mrs_natural/socketsPort");
   ctrl_tempo_ = getctrl("mrs_real/tempo");
+  ctrl_beats_for_tempo_ = getctrl("mrs_natural/beatsForTempo");
+    
   ibiBPM_ = a.ibiBPM_;
   beatCount_ = a.beatCount_;
   ibiBPMSum_ = a.ibiBPMSum_;
@@ -111,8 +113,9 @@ BeatTimesSink::addControls()
   setctrlState("mrs_bool/nonCausal", true);
   addctrl("mrs_natural/socketsPort", -1, ctrl_socketsPort_);
   setctrlState("mrs_natural/socketsPort", true);
-  addctrl("mrs_real/tempo", 80.0, ctrl_tempo_);
-
+  addctrl("mrs_real/tempo", 120.0, ctrl_tempo_);
+  addctrl("mrs_natural/beatsForTempo", 8, ctrl_beats_for_tempo_);
+  setctrlState("mrs_natural/beatsForTempo", true);
 
 }
 
@@ -134,6 +137,8 @@ BeatTimesSink::myUpdate(MarControlPtr sender)
   soundFileSize_ = ctrl_soundFileSize_->to<mrs_natural>();
   nonCausal_ = ctrl_nonCausal_->to<mrs_bool>();
   socketsPort_ = ctrl_socketsPort_->to<mrs_natural>();
+    
+  beatsForTempo_ = ctrl_beats_for_tempo_->to<mrs_natural>();
 }
 
 mrs_natural
@@ -249,13 +254,14 @@ BeatTimesSink::myProcess(realvec& in, realvec& out)
         //curMedianTempo = (mrs_natural) (ibiBPMVec_((mrs_natural)(beatCount_ / 2.0)) + 0.5);
         mrs_real curMedianTempo;
         mrs_realvec tempoVecMedian_(1);
-        if(tempoVec_.size() > 10)
+          
+        if(tempoVec_.size() > beatsForTempo_)
         {
-          tempoVecMedian_.stretch(10); //account for last 10IBIs (11beats)
+          tempoVecMedian_.stretch(beatsForTempo_); //account for last (nb_beats_to_count)IBIs (nb_beats_to_count + 1 beats)
           mrs_natural ii = 0;
-          for(mrs_natural s = (mrs_natural) (tempoVec_.size()-10); s < (mrs_natural) tempoVec_.size(); s++)
+          for(mrs_natural s = (mrs_natural) (tempoVec_.size()-beatsForTempo_); s < (mrs_natural) tempoVec_.size(); s++)
           {
-            tempoVecMedian_(ii) = tempoVec_.at(s);
+              tempoVecMedian_(ii) = tempoVec_.at(s);
             ii++;
           }
         }

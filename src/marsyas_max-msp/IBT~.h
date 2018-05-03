@@ -30,7 +30,7 @@ using namespace Marsyas;
 class MarMaxIBT
 {
 public:
-  MarMaxIBT(mrs_natural winSize, mrs_natural hopSize, mrs_real fs, mrs_real indTime, mrs_natural minBPM, mrs_natural maxBPM, mrs_string outPathName, mrs_bool stateRecovery);
+  MarMaxIBT(mrs_natural winSize, mrs_natural hopSize, mrs_real fs, mrs_real indTime, mrs_natural minBPM, mrs_natural maxBPM, mrs_string outPathName, mrs_bool stateRecovery, mrs_natural beatsForTempo);
   virtual ~MarMaxIBT();
 
   MarSystem* createMarsyasNet(void);

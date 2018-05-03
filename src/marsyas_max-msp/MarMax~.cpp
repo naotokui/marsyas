@@ -116,8 +116,6 @@ t_int *MarMax_perform(t_int *w)
         //post("tempo: %d", curMedianTempo);
         outlet_float(x->outletTempo, curMedianTempo); // signal outlet (note "signal" rather than NULL)
 
-        //post("output vector copied");
-
         if (output_realvec(0,0))
           outlet_bang (x->outletBeat);
         //if(output_realvec(0,0))
@@ -160,6 +158,7 @@ void MarMax_setIBTDefaultParams(t_MarMax *x)
   x->minBPM = 81;
   x->maxBPM = 160;
   x->stateRecovery = false;
+  x->beatsForTempo = 8;
   x->outPathName = "";
 }
 
@@ -227,9 +226,15 @@ void *MarMax_new(t_symbol *s, long argc, t_atom *argv)
         if(stateParam >= 1) x->stateRecovery = true;
         argc -= 2; argv += 2;
       }
+      else if (!strcmp(firstarg->s_name, "@beatsForTempo") && argc > 1)
+      {
+          object_post((t_object *)x, "%s: %d", firstarg->s_name, (int) atom_getlong(argv+1));
+          x->beatsForTempo = (int) atom_getlong(argv+1);
+          argc -= 2; argv += 2;
+      }
       else
       {
-        object_post((t_object *)x, "usage is ibt~ [@winSize #] [@hopSize #] [@inductionTime #] [@minBPM #] [@maxBPM #] [@stateRecovery] [@outPathName #]");
+        object_post((t_object *)x, "usage is ibt~ [@winSize #] [@hopSize #] [@inductionTime #] [@minBPM #] [@maxBPM #] [@stateRecovery] [@outPathName #] [@beatsForTempo]");
         argc = 0;
       }
     }
@@ -246,7 +251,7 @@ void *MarMax_new(t_symbol *s, long argc, t_atom *argv)
     //	x->bufsize, x->hopsize, x->d_SR, x->inductionTime, x->minBPM, x->maxBPM, x->outPathName);
 
     //Create the MarSystem Network
-    x->ibt = new MarMaxIBT(x->bufsize, x->hopsize, 44100.0, x->inductionTime, x->minBPM, x->maxBPM, x->outPathName, x->stateRecovery);
+    x->ibt = new MarMaxIBT(x->bufsize, x->hopsize, 44100.0, x->inductionTime, x->minBPM, x->maxBPM, x->outPathName, x->stateRecovery, x->beatsForTempo);
     x->m_MarsyasNetwork = x->ibt->createMarsyasNet();
 
     x->offset = 0;

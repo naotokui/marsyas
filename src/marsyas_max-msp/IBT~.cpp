@@ -5,11 +5,11 @@
 #define MIN_BPM 81 //minimum tempo considered, in BPMs (50) [80 -> to prevent octave error]
 #define MAX_BPM 160 //maximum tempo considered, in BPMs (250) [160 -> to prevent octave error]
 #define NR_AGENTS 60 //Nr. of agents in the pool (30)
-#define LFT_OUTTER_MARGIN 0.20 //(Inertia1.1) The size of the outer half-window (in % of the IBI) before the predicted beat time (0.20)
-#define RGT_OUTTER_MARGIN 0.30 //(Inertia1.2) The size of the outer half-window (in % of the IBI) after the predicted beat time (0.30)
+#define LFT_OUTTER_MARGIN 0.15 //(Inertia1.1) The size of the outer half-window (in % of the IBI) before the predicted beat time (0.20)
+#define RGT_OUTTER_MARGIN 0.25 //(Inertia1.2) The size of the outer half-window (in % of the IBI) after the predicted beat time (0.30)
 #define INNER_MARGIN 4.0 //(Inertia1.3) Inner tolerance window margin size (= half inner window size -> in ticks) (4.0)
 #define OBSOLETE_FACTOR 0.9 //An agent is killed if, at any time (after the initial Xsecs-defined in BeatReferee), the difference between its score and the bestScore is below OBSOLETE_FACTOR * bestScore (0.8)
-#define LOST_FACTOR 2 //An agent is killed if it become lost, i.e. if it found LOST_FACTOR consecutive beat predictions outside its inner tolerance window (8)
+#define LOST_FACTOR 4 //An agent is killed if it become lost, i.e. if it found LOST_FACTOR consecutive beat predictions outside its inner tolerance window (8)
 #define CHILDREN_SCORE_FACTOR 0.9 //(Inertia2) Each created agent imports its father score multiplied (or divided if negative) by this factor (0.8)
 #define BEST_FACTOR 1.0 //(Inertia3) Mutiple of the bestScore an agent's score must have for replacing the current best agent (1.0)
 #define CORRECTION_FACTOR 0.25 //(Inertia4) correction factor for compensating each agents' own {phase, period} hypothesis errors (0.25)
@@ -31,6 +31,9 @@
 
 using namespace Marsyas;
 using namespace std;
+
+#include "ext.h"                            // standard Max include, always required (except in Jitter)
+#include "ext_obex.h"                        // required for new style objects
 
 mrs_string sfName="BeatOutput.wav"; //HARD-CODED!!!
 mrs_string groundtruth_file="-1"; //for groundtruth induction
@@ -66,13 +69,14 @@ mrs_natural nr_agents = NR_AGENTS;
 mrs_natural min_bpm = MIN_BPM;
 mrs_natural max_bpm = MAX_BPM;
 mrs_real induction_time = INDUCTION_TIME;
+mrs_natural beats_for_tempo = 10;
 
 //Default Parameters
 mrs_natural stepSize = HOPSIZE;
 mrs_natural blockSize = WINSIZE;
 mrs_real m_inputSampleRate = 44100.0;
 
-MarMaxIBT::MarMaxIBT(mrs_natural winSize, mrs_natural hopSize, mrs_real fs, mrs_real indTime, mrs_natural minBPM, mrs_natural maxBPM, mrs_string outPathName, mrs_bool stateRecovery)
+MarMaxIBT::MarMaxIBT(mrs_natural winSize, mrs_natural hopSize, mrs_real fs, mrs_real indTime, mrs_natural minBPM, mrs_natural maxBPM, mrs_string outPathName, mrs_bool stateRecovery, mrs_natural beatsForTempo)
 {
   blockSize = winSize;
   stepSize = hopSize;
@@ -81,7 +85,8 @@ MarMaxIBT::MarMaxIBT(mrs_natural winSize, mrs_natural hopSize, mrs_real fs, mrs_
   max_bpm = maxBPM;
   induction_time = indTime;
   sfName = outPathName;
-
+  beats_for_tempo = beatsForTempo;
+    
   if(strcmp(sfName.c_str(), "") == 0) output="none"; //no output if none define in Max command line
   else output="beats+medianTempo";
 
@@ -683,7 +688,10 @@ MarSystem* MarMaxIBT::createMarsyasNet()
 
     beattracker->updControl("BeatReferee/br/mrs_string/triggerTimesFile", triggerFilePath.str());
   }
-
+    
+  // set # of beats for averaging tempo
+  beattracker->updControl("BeatTimesSink/sink/mrs_natural/beatsForTempo", beats_for_tempo);
+    
   //adjustment used in TickCount calculation above
   beattracker->updControl("BeatTimesSink/sink/mrs_natural/adjustment", adjustment);
   if(strcmp(output.c_str(), "none") != 0)

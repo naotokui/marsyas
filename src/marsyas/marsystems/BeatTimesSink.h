@@ -65,6 +65,7 @@ private:
   MarControlPtr ctrl_nonCausal_;
   MarControlPtr ctrl_socketsPort_;
   MarControlPtr ctrl_tempo_;
+  MarControlPtr ctrl_beats_for_tempo_; // number of beats for averaging
 
   mrs_real beatTimeTmp_;
   mrs_real lastIbi_;
@@ -92,6 +93,8 @@ private:
   mrs_natural beatCount_;
   std::vector <mrs_real> tempoVec_;
 
+  mrs_natural beatsForTempo_;
+    
   mrs_natural socketsPort_;
   // SOCKET mySocket_, myAcceptSocket_;
   mrs_real *data_;

@@ -38,6 +38,7 @@ typedef struct _MarMax
   t_int minBPM;
   t_int maxBPM;
   bool stateRecovery;
+    t_int beatsForTempo; // number of beats for averaging tempo
   char *outPathName;
   //unused for now
   t_int onlineFlag;
