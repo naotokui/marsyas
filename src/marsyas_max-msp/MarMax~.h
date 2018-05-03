@@ -52,6 +52,8 @@ void MarMax_assist(t_MarMax *x, void *b, long m, long a, char *s);
 void MarMax_setIBTDefaultParams(t_MarMax *x);
 void MarMax_float(t_MarMax *x, double f);
 
+void MarMax_reset(t_MarMax *x, void *b, long m, long a, char *s);
+
 void MarMax_dsp(t_MarMax *x, t_signal **sp, short *count);
 t_int *MarMax_perform(t_int *w);
 //////////////////////// global class pointer variable

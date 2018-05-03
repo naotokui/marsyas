@@ -34,6 +34,8 @@ public:
   virtual ~MarMaxIBT();
 
   MarSystem* createMarsyasNet(void);
+    
+  void resetBeatTracking(void);
 
 protected:
   MarSystemManager mng;
@@ -42,6 +44,7 @@ protected:
   MarSystem* featExtractor;
   MarSystem* audioflow;
   MarSystem* beattracker;
+  MarSystem* beatreferee;
   mrs_natural inductionTickCount;
 };
 

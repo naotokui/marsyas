@@ -16,6 +16,7 @@ int main(void)
   class_addmethod(c, (method)MarMax_float,		"float",	A_FLOAT, 0);
   class_addmethod(c, (method)MarMax_dsp,		"dsp",		A_CANT, 0);
   class_addmethod(c, (method)MarMax_assist,	"assist",	A_CANT, 0);
+  class_addmethod(c, (method)MarMax_reset,    "reset", 0);
   //for parameters defined as messages in the first inlet
   //class_addmethod(c, (method)MarMax_window,		"window",	A_FLOAT,	A_FLOAT, 0);
 
@@ -25,6 +26,14 @@ int main(void)
 
   return 0;
 }
+
+void MarMax_reset(t_MarMax *x, void *b, long m, long a, char *s)
+{
+    x->ibt->resetBeatTracking();
+    post("reset");
+
+}
+
 
 void MarMax_float(t_MarMax *x, double f)
 {
@@ -220,7 +229,7 @@ void *MarMax_new(t_symbol *s, long argc, t_atom *argv)
       }
       else
       {
-        object_post((t_object *)x, "usage is ibt2~ [@winSize #] [@hopSize #] [@inductionTime #] [@minBPM #] [@maxBPM #] [@stateRecovery] [@outPathName #]");
+        object_post((t_object *)x, "usage is ibt~ [@winSize #] [@hopSize #] [@inductionTime #] [@minBPM #] [@maxBPM #] [@stateRecovery] [@outPathName #]");
         argc = 0;
       }
     }

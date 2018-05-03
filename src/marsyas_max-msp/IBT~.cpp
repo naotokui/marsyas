@@ -4,12 +4,12 @@
 #define PHASE_HYPOTHESES 30//Nr. of phases per BPM hypothesis (30)
 #define MIN_BPM 81 //minimum tempo considered, in BPMs (50) [80 -> to prevent octave error]
 #define MAX_BPM 160 //maximum tempo considered, in BPMs (250) [160 -> to prevent octave error]
-#define NR_AGENTS 30 //Nr. of agents in the pool (30)
+#define NR_AGENTS 60 //Nr. of agents in the pool (30)
 #define LFT_OUTTER_MARGIN 0.20 //(Inertia1.1) The size of the outer half-window (in % of the IBI) before the predicted beat time (0.20)
-#define RGT_OUTTER_MARGIN 0.40 //(Inertia1.2) The size of the outer half-window (in % of the IBI) after the predicted beat time (0.30)
+#define RGT_OUTTER_MARGIN 0.30 //(Inertia1.2) The size of the outer half-window (in % of the IBI) after the predicted beat time (0.30)
 #define INNER_MARGIN 4.0 //(Inertia1.3) Inner tolerance window margin size (= half inner window size -> in ticks) (4.0)
-#define OBSOLETE_FACTOR 0.8 //An agent is killed if, at any time (after the initial Xsecs-defined in BeatReferee), the difference between its score and the bestScore is below OBSOLETE_FACTOR * bestScore (0.8)
-#define LOST_FACTOR 8 //An agent is killed if it become lost, i.e. if it found LOST_FACTOR consecutive beat predictions outside its inner tolerance window (8)
+#define OBSOLETE_FACTOR 0.9 //An agent is killed if, at any time (after the initial Xsecs-defined in BeatReferee), the difference between its score and the bestScore is below OBSOLETE_FACTOR * bestScore (0.8)
+#define LOST_FACTOR 2 //An agent is killed if it become lost, i.e. if it found LOST_FACTOR consecutive beat predictions outside its inner tolerance window (8)
 #define CHILDREN_SCORE_FACTOR 0.9 //(Inertia2) Each created agent imports its father score multiplied (or divided if negative) by this factor (0.8)
 #define BEST_FACTOR 1.0 //(Inertia3) Mutiple of the bestScore an agent's score must have for replacing the current best agent (1.0)
 #define CORRECTION_FACTOR 0.25 //(Inertia4) correction factor for compensating each agents' own {phase, period} hypothesis errors (0.25)
@@ -21,7 +21,7 @@
 #define TRIGGER_GT_TOL 5 //Number of miss computed beats, in comparison to ground-truth beat-times, tolerated before triggering new induction (used in trigger "groundtruth" mode) -> can be defined via -tigt_tol 
 #define TRIGGER_BEST_FACTOR 1.0 //Proportion of the current best agent score which is inherited by the agents created at each triggered induction [shouldn't be much higher than 1, for not inflating scores two much] (1.0)
 #define SUPERVISED_TRIGGER_THRES 0.0 //Degree (in percentage) of mean bestScore decrease to trigger a new induction in supervised induction mode (0.03)
-#define BEAT_TRANSITION_TOL 0.6 //Tolerance for handling beats at transitions between agents [-1 for unconsider it]: (0.6)
+#define BEAT_TRANSITION_TOL -1 //Tolerance for handling beats at transitions between agents [-1 for unconsider it]: (0.6)
 //In causal mode, if between two consecutive beats there is over a BEAT_TRANSITION_TOL decrease in current IBI the second beat is unconsidered;
 //In non-causal mode, if between a son's first beat and its father's last there is over a BEAT_TRANSITION_TOL descrease on the father last IBI the son's first beat is unconsidered;
 //In non-causal mode, if between a son's first beat and its father's last there is over a BEAT_TRANSITION_TOL increase on the father last IBI the son's first beat shall be its father's next beat, and the second beat shall be its assigned first.
@@ -95,6 +95,18 @@ MarMaxIBT::MarMaxIBT(mrs_natural winSize, mrs_natural hopSize, mrs_real fs, mrs_
 
 MarMaxIBT::~MarMaxIBT() {}
 
+void MarMaxIBT::resetBeatTracking(){
+    //Pass initital hypotheses to BeatReferee
+    
+//    ibt->updControl("mrs_bool/done",true);
+//    beattracker->updControl("BeatReferee/br/mrs_natural/inductionTime", 5.0);
+//    beattracker->updControl("FlowThru/tempoinduction/TempoHypotheses/tempohyp/mrs_bool/triggerInduction", true);
+//    ((BeatReferee*)beatreferee)->resetTime();
+//    ((BeatReferee*)beatreferee)->initialization();
+    
+    
+}
+
 MarSystem* MarMaxIBT::createMarsyasNet()
 {
   ibt = mng.create("Series", "ibt");
@@ -167,7 +179,8 @@ MarSystem* MarMaxIBT::createMarsyasNet()
   }
 
   beattracker->addMarSystem(agentpool);
-  beattracker->addMarSystem(mng.create("BeatReferee", "br"));
+  beatreferee = mng.create("BeatReferee", "br");
+  beattracker->addMarSystem(beatreferee);
   beattracker->addMarSystem(mng.create("BeatTimesSink", "sink"));
 
 
@@ -620,6 +633,7 @@ MarSystem* MarMaxIBT::createMarsyasNet()
   if(noncausalopt) beattracker->updControl("BeatReferee/br/mrs_bool/resetAfterNewInduction", false);
   else beattracker->updControl("BeatReferee/br/mrs_bool/resetAfterNewInduction", true);
 
+    
   ostringstream path;
   FileName outputFile(sfName);
   mrs_string outputTxt = "";
