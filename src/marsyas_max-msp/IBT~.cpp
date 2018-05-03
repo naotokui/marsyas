@@ -4,9 +4,9 @@
 #define PHASE_HYPOTHESES 30//Nr. of phases per BPM hypothesis (30)
 #define MIN_BPM 81 //minimum tempo considered, in BPMs (50) [80 -> to prevent octave error]
 #define MAX_BPM 160 //maximum tempo considered, in BPMs (250) [160 -> to prevent octave error]
-#define NR_AGENTS 60 //Nr. of agents in the pool (30)
-#define LFT_OUTTER_MARGIN 0.15 //(Inertia1.1) The size of the outer half-window (in % of the IBI) before the predicted beat time (0.20)
-#define RGT_OUTTER_MARGIN 0.25 //(Inertia1.2) The size of the outer half-window (in % of the IBI) after the predicted beat time (0.30)
+#define NR_AGENTS 20 //Nr. of agents in the pool (30)
+#define LFT_OUTTER_MARGIN 0.20 //(Inertia1.1) The size of the outer half-window (in % of the IBI) before the predicted beat time (0.20)
+#define RGT_OUTTER_MARGIN 0.30 //(Inertia1.2) The size of the outer half-window (in % of the IBI) after the predicted beat time (0.30)
 #define INNER_MARGIN 4.0 //(Inertia1.3) Inner tolerance window margin size (= half inner window size -> in ticks) (4.0)
 #define OBSOLETE_FACTOR 0.9 //An agent is killed if, at any time (after the initial Xsecs-defined in BeatReferee), the difference between its score and the bestScore is below OBSOLETE_FACTOR * bestScore (0.8)
 #define LOST_FACTOR 4 //An agent is killed if it become lost, i.e. if it found LOST_FACTOR consecutive beat predictions outside its inner tolerance window (8)
@@ -26,8 +26,8 @@
 //In non-causal mode, if between a son's first beat and its father's last there is over a BEAT_TRANSITION_TOL descrease on the father last IBI the son's first beat is unconsidered;
 //In non-causal mode, if between a son's first beat and its father's last there is over a BEAT_TRANSITION_TOL increase on the father last IBI the son's first beat shall be its father's next beat, and the second beat shall be its assigned first.
 
-#define WINSIZE 1024 //(2048?)
-#define HOPSIZE 512 //(512)
+#define WINSIZE 512 //(2048?)
+#define HOPSIZE 256 //(512)
 
 using namespace Marsyas;
 using namespace std;

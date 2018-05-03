@@ -1371,7 +1371,7 @@ BeatReferee::calcChildrenHypothesis(mrs_natural oldPeriod, mrs_natural prevBeat,
 {
   mrs_natural nextBeat1 = -100, nextBeat2 = -100, nextBeat3 = -100;
   mrs_natural newPeriod1 = -100, newPeriod2 = -100, newPeriod3 = -100;
-  mrs_realvec newHypotheses(3,3); //for 3 children
+  mrs_realvec newHypotheses(4,4); //for 4 children
 
   //cout << "ChildFactor1:" << child1Factor_ << "; ChildFactor2:" << child2Factor_ << "; ChildFactor3:" << child3Factor_ << endl;
 
@@ -1446,7 +1446,13 @@ BeatReferee::calcChildrenHypothesis(mrs_natural oldPeriod, mrs_natural prevBeat,
       || (abs(newPeriod3 - newPeriod2) <= eqPeriod_ && abs(nextBeat3 - nextBeat2) <= eqPhase_))
     newHypotheses(2,2) = 0;
   else newHypotheses(2,2) = 1;
-
+    
+    // children4
+    // Always look for half beat shift - children 4
+    newHypotheses(3,0) = oldPeriod;
+    newHypotheses(3,1) = prevBeat + oldPeriod * 0.50;
+    newHypotheses(3,2) = 1;
+    
   //cout << "oldPeriod: " << oldPeriod << "; newPeriod: " << newPeriod << "; Error: " << error <<
   //	"; prevBeat: " << prevBeat << "; nextBeat: " << nextBeat << endl;
 
@@ -1481,7 +1487,9 @@ BeatReferee::createChildren(mrs_natural agentIndex, mrs_natural oldPeriod, mrs_n
     createNewAgent((mrs_natural) newHypotheses(1,0), (mrs_natural) newHypotheses(1,1), newScore, beatCount, agentIndex);
   if(child3Factor_ != -1.0 && newHypotheses(2,2) == 1)
     createNewAgent((mrs_natural) newHypotheses(2,0), (mrs_natural) newHypotheses(2,1),  newScore, beatCount, agentIndex);
-
+   // children 4 - always look for half-beat diff
+   createNewAgent((mrs_natural) newHypotheses(3,0), (mrs_natural) newHypotheses(3,1),  newScore, beatCount, agentIndex);
+    
   //Display Created BeatAgent:
   //if(timeElapsed_ == 2046)
   //	cout << "NEW AGENT(" << timeElapsed_ << "-" << ((timeElapsed_ * hopSize_) - (hopSize_/2)) / srcFs_ << ") (reqBy:" << agentIndex <<
