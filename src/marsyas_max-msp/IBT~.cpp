@@ -4,11 +4,11 @@
 #define PHASE_HYPOTHESES 30//Nr. of phases per BPM hypothesis (30)
 #define MIN_BPM 81 //minimum tempo considered, in BPMs (50) [80 -> to prevent octave error]
 #define MAX_BPM 160 //maximum tempo considered, in BPMs (250) [160 -> to prevent octave error]
-#define NR_AGENTS 20 //Nr. of agents in the pool (30)
+#define NR_AGENTS 30 //Nr. of agents in the pool (30)
 #define LFT_OUTTER_MARGIN 0.20 //(Inertia1.1) The size of the outer half-window (in % of the IBI) before the predicted beat time (0.20)
 #define RGT_OUTTER_MARGIN 0.30 //(Inertia1.2) The size of the outer half-window (in % of the IBI) after the predicted beat time (0.30)
 #define INNER_MARGIN 4.0 //(Inertia1.3) Inner tolerance window margin size (= half inner window size -> in ticks) (4.0)
-#define OBSOLETE_FACTOR 0.9 //An agent is killed if, at any time (after the initial Xsecs-defined in BeatReferee), the difference between its score and the bestScore is below OBSOLETE_FACTOR * bestScore (0.8)
+#define OBSOLETE_FACTOR 0.70 //An agent is killed if, at any time (after the initial Xsecs-defined in BeatReferee), the difference between its score and the bestScore is below OBSOLETE_FACTOR * bestScore (0.8)
 #define LOST_FACTOR 4 //An agent is killed if it become lost, i.e. if it found LOST_FACTOR consecutive beat predictions outside its inner tolerance window (8)
 #define CHILDREN_SCORE_FACTOR 0.9 //(Inertia2) Each created agent imports its father score multiplied (or divided if negative) by this factor (0.8)
 #define BEST_FACTOR 1.0 //(Inertia3) Mutiple of the bestScore an agent's score must have for replacing the current best agent (1.0)
