@@ -1,0 +1,1074 @@
+The system is: Darwin - 17.3.0 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+2018-05-03 16:08:39.599 xcodebuild[80559:3524779] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/WakaTime.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2018-05-03 16:08:39.600 xcodebuild[80559:3524779] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/OFXcodeMenu.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2018-05-03 16:08:39.601 xcodebuild[80559:3524779] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+=== BUILD TARGET CompilerIdC OF PROJECT CompilerIdC WITH THE DEFAULT CONFIGURATION (Debug) ===
+
+Check dependencies
+2018-05-03 16:08:41.120 xcodebuild[80559:3524802]  iPhoneConnect: ## Unable to mount developer disk image, (Error Domain=com.apple.dtdevicekit Code=601 "Could not locate device support files." UserInfo={DeviceType=iPad6,3, NSLocalizedDescription=Could not locate device support files., NSLocalizedRecoverySuggestion=This iPad Pro (9.7-inch) (Model A1673) is running iOS 11.4 (15F5037c), which may not be supported by this version of Xcode.}) {
+    DeviceType = "iPad6,3";
+    NSLocalizedDescription = "Could not locate device support files.";
+    NSLocalizedRecoverySuggestion = "This iPad Pro (9.7-inch) (Model A1673) is running iOS 11.4 (15F5037c), which may not be supported by this version of Xcode.";
+}
+
+Write auxiliary files
+write-file /Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-all-non-framework-target-headers.hmap
+write-file /Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-all-target-headers.hmap
+write-file /Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+chmod 0755 /Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+write-file /Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-project-headers.hmap
+write-file /Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-generated-files.hmap
+write-file /Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-own-target-headers.hmap
+/bin/mkdir -p /Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64
+write-file /Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/CompilerIdC.LinkFileList
+write-file /Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC.hmap
+
+CompileC CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/CMakeCCompilerId.o CMakeCCompilerId.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdC
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.13 -g -fvisibility=hidden -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -I/Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC.hmap -I/Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdC/include -I/Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/DerivedSources/x86_64 -I/Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/DerivedSources -F/Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdC -MMD -MT dependencies -MF /Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/CMakeCCompilerId.d --serialize-diagnostics /Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/CMakeCCompilerId.dia -c /Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdC/CMakeCCompilerId.c -o /Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/CMakeCCompilerId.o
+
+Ld CompilerIdC normal x86_64
+    cd /Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdC
+    export MACOSX_DEPLOYMENT_TARGET=10.13
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -L/Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdC -F/Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdC -filelist /Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/CompilerIdC.LinkFileList -mmacosx-version-min=10.13 -Xlinker -object_path_lto -Xlinker /Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/CompilerIdC_lto.o -Xlinker -dependency_info -Xlinker /Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/CompilerIdC_dependency_info.dat -o /Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdC/CompilerIdC
+
+PhaseScriptExecution Run\ Script CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+    cd /Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdC
+    /bin/sh -c /Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+GCC_VERSION=com.apple.compilers.llvm.clang.1_0
+CURRENT_ARCH=x86_64
+
+** BUILD SUCCEEDED **
+
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC"
+
+The C compiler identification is AppleClang, found in "/Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdC/CompilerIdC"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+2018-05-03 16:08:42.499 xcodebuild[80573:3525245] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/WakaTime.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2018-05-03 16:08:42.500 xcodebuild[80573:3525245] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/OFXcodeMenu.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2018-05-03 16:08:42.500 xcodebuild[80573:3525245] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+=== BUILD TARGET CompilerIdCXX OF PROJECT CompilerIdCXX WITH THE DEFAULT CONFIGURATION (Debug) ===
+
+Check dependencies
+
+Write auxiliary files
+write-file /Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+chmod 0755 /Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+write-file /Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-all-target-headers.hmap
+write-file /Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-project-headers.hmap
+/bin/mkdir -p /Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64
+write-file /Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/CompilerIdCXX.LinkFileList
+write-file /Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-own-target-headers.hmap
+write-file /Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX.hmap
+write-file /Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-generated-files.hmap
+write-file /Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-all-non-framework-target-headers.hmap
+
+CompileC CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/CMakeCXXCompilerId.o CMakeCXXCompilerId.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdCXX
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.13 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -I/Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX.hmap -I/Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdCXX/include -I/Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/DerivedSources/x86_64 -I/Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/DerivedSources -F/Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdCXX -MMD -MT dependencies -MF /Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/CMakeCXXCompilerId.d --serialize-diagnostics /Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/CMakeCXXCompilerId.dia -c /Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdCXX/CMakeCXXCompilerId.cpp -o /Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/CMakeCXXCompilerId.o
+
+Ld CompilerIdCXX normal x86_64
+    cd /Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdCXX
+    export MACOSX_DEPLOYMENT_TARGET=10.13
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -L/Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdCXX -F/Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdCXX -filelist /Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/CompilerIdCXX.LinkFileList -mmacosx-version-min=10.13 -Xlinker -object_path_lto -Xlinker /Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/CompilerIdCXX_lto.o -Xlinker -dependency_info -Xlinker /Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/CompilerIdCXX_dependency_info.dat -o /Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdCXX/CompilerIdCXX
+
+PhaseScriptExecution Run\ Script CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+    cd /Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdCXX
+    /bin/sh -c /Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+GCC_VERSION=com.apple.compilers.llvm.clang.1_0
+CURRENT_ARCH=x86_64
+
+** BUILD SUCCEEDED **
+
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX"
+
+The CXX compiler identification is AppleClang, found in "/Users/nao/git/_public/marsyas/build/CMakeFiles/3.11.1/CompilerIdCXX/CompilerIdCXX"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_b3635" "-configuration" "Debug"
+2018-05-03 16:08:43.945 xcodebuild[80592:3525371] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/WakaTime.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2018-05-03 16:08:43.946 xcodebuild[80592:3525371] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/OFXcodeMenu.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2018-05-03 16:08:43.946 xcodebuild[80592:3525371] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+=== BUILD TARGET cmTC_b3635 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_b3635.build/Objects-normal/x86_64
+write-file /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_b3635.build/Objects-normal/x86_64/cmTC_b3635.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_b3635.build/Objects-normal/x86_64/testCCompiler.o testCCompiler.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.13 -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/include -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_b3635.build/DerivedSources/x86_64 -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_b3635.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_b3635.build/Objects-normal/x86_64/testCCompiler.d --serialize-diagnostics /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_b3635.build/Objects-normal/x86_64/testCCompiler.dia -c /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/testCCompiler.c -o /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_b3635.build/Objects-normal/x86_64/testCCompiler.o
+
+Ld Debug/cmTC_b3635 normal x86_64
+    cd /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+    export MACOSX_DEPLOYMENT_TARGET=10.13
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -L/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -F/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_b3635.build/Objects-normal/x86_64/cmTC_b3635.LinkFileList -mmacosx-version-min=10.13 -Xlinker -object_path_lto -Xlinker /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_b3635.build/Objects-normal/x86_64/cmTC_b3635_lto.o -Xlinker -no_deduplicate -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_b3635.build/Objects-normal/x86_64/cmTC_b3635_dependency_info.dat -o /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/cmTC_b3635
+
+** BUILD SUCCEEDED **
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_c323a" "-configuration" "Debug"
+2018-05-03 16:08:45.412 xcodebuild[80607:3525433] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/WakaTime.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2018-05-03 16:08:45.412 xcodebuild[80607:3525433] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/OFXcodeMenu.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2018-05-03 16:08:45.413 xcodebuild[80607:3525433] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+=== BUILD TARGET cmTC_c323a OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c323a.build/Objects-normal/x86_64
+write-file /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c323a.build/Objects-normal/x86_64/cmTC_c323a.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_c323a.build/Objects-normal/x86_64/CMakeCCompilerABI.o /Applications/CMake.app/Contents/share/cmake-3.11/Modules/CMakeCCompilerABI.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.13 -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/include -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c323a.build/DerivedSources/x86_64 -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c323a.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c323a.build/Objects-normal/x86_64/CMakeCCompilerABI.d --serialize-diagnostics /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c323a.build/Objects-normal/x86_64/CMakeCCompilerABI.dia -c /Applications/CMake.app/Contents/share/cmake-3.11/Modules/CMakeCCompilerABI.c -o /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c323a.build/Objects-normal/x86_64/CMakeCCompilerABI.o
+
+Ld Debug/cmTC_c323a normal x86_64
+    cd /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+    export MACOSX_DEPLOYMENT_TARGET=10.13
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -L/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -F/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c323a.build/Objects-normal/x86_64/cmTC_c323a.LinkFileList -mmacosx-version-min=10.13 -Xlinker -object_path_lto -Xlinker /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c323a.build/Objects-normal/x86_64/cmTC_c323a_lto.o -Xlinker -no_deduplicate -v -Wl,-v -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c323a.build/Objects-normal/x86_64/cmTC_c323a_dependency_info.dat -o /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/cmTC_c323a
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.3.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+Found CUDA installation: /usr/local/cuda, version 7.5
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.13.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -o /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/cmTC_c323a -L/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c323a.build/Objects-normal/x86_64/cmTC_c323a.LinkFileList -object_path_lto /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c323a.build/Objects-normal/x86_64/cmTC_c323a_lto.o -no_deduplicate -v -search_paths_first -headerpad_max_install_names -dependency_info /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c323a.build/Objects-normal/x86_64/cmTC_c323a_dependency_info.dat -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/lib/darwin/libclang_rt.osx.a -F/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug
+@(#)PROGRAM:ld  PROJECT:ld64-305
+configured to support archs: armv6 armv7 armv7s arm64 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em (tvOS)
+Library search paths:
+	/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug
+	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/lib
+Framework search paths:
+	/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug
+	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/
+
+** BUILD SUCCEEDED **
+
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_c323a" "-configuration" "Debug"]
+  ignore line: [2018-05-03 16:08:45.412 xcodebuild[80607:3525433] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/WakaTime.xcplugin' not present in DVTPlugInCompatibilityUUIDs]
+  ignore line: [2018-05-03 16:08:45.412 xcodebuild[80607:3525433] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/OFXcodeMenu.xcplugin' not present in DVTPlugInCompatibilityUUIDs]
+  ignore line: [2018-05-03 16:08:45.413 xcodebuild[80607:3525433] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin' not present in DVTPlugInCompatibilityUUIDs]
+  ignore line: [=== BUILD TARGET cmTC_c323a OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===]
+  ignore line: []
+  ignore line: [Check dependencies]
+  ignore line: []
+  ignore line: [Write auxiliary files]
+  ignore line: [/bin/mkdir -p /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c323a.build/Objects-normal/x86_64]
+  ignore line: [write-file /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c323a.build/Objects-normal/x86_64/cmTC_c323a.LinkFileList]
+  ignore line: []
+  ignore line: [CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_c323a.build/Objects-normal/x86_64/CMakeCCompilerABI.o /Applications/CMake.app/Contents/share/cmake-3.11/Modules/CMakeCCompilerABI.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler]
+  ignore line: [    cd /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp]
+  ignore line: [    export LANG=en_US.US-ASCII]
+  ignore line: [    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.13 -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/include -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c323a.build/DerivedSources/x86_64 -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c323a.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c323a.build/Objects-normal/x86_64/CMakeCCompilerABI.d --serialize-diagnostics /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c323a.build/Objects-normal/x86_64/CMakeCCompilerABI.dia -c /Applications/CMake.app/Contents/share/cmake-3.11/Modules/CMakeCCompilerABI.c -o /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c323a.build/Objects-normal/x86_64/CMakeCCompilerABI.o]
+  ignore line: []
+  ignore line: [Ld Debug/cmTC_c323a normal x86_64]
+  ignore line: [    cd /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp]
+  ignore line: [    export MACOSX_DEPLOYMENT_TARGET=10.13]
+  ignore line: [    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -L/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -F/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c323a.build/Objects-normal/x86_64/cmTC_c323a.LinkFileList -mmacosx-version-min=10.13 -Xlinker -object_path_lto -Xlinker /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c323a.build/Objects-normal/x86_64/cmTC_c323a_lto.o -Xlinker -no_deduplicate -v -Wl,-v -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c323a.build/Objects-normal/x86_64/cmTC_c323a_dependency_info.dat -o /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/cmTC_c323a]
+  ignore line: [Apple LLVM version 9.0.0 (clang-900.0.39.2)]
+  ignore line: [Target: x86_64-apple-darwin17.3.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+  ignore line: [Found CUDA installation: /usr/local/cuda, version 7.5]
+  reduced line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.13.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -o /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/cmTC_c323a -L/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c323a.build/Objects-normal/x86_64/cmTC_c323a.LinkFileList -object_path_lto /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c323a.build/Objects-normal/x86_64/cmTC_c323a_lto.o -no_deduplicate -v -search_paths_first -headerpad_max_install_names -dependency_info /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c323a.build/Objects-normal/x86_64/cmTC_c323a_dependency_info.dat -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/lib/darwin/libclang_rt.osx.a -F/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug]
+            to: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.13.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -o /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/cmTC_c323a -filelist /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c323a.build/Objects-normal/x86_64/cmTC_c323a.LinkFileList -object_path_lto /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c323a.build/Objects-normal/x86_64/cmTC_c323a_lto.o -no_deduplicate -v -search_paths_first -headerpad_max_install_names -dependency_info /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c323a.build/Objects-normal/x86_64/cmTC_c323a_dependency_info.dat -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/lib/darwin/libclang_rt.osx.a ]
+  link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.13.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -o /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/cmTC_c323a -filelist /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c323a.build/Objects-normal/x86_64/cmTC_c323a.LinkFileList -object_path_lto /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c323a.build/Objects-normal/x86_64/cmTC_c323a_lto.o -no_deduplicate -v -search_paths_first -headerpad_max_install_names -dependency_info /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c323a.build/Objects-normal/x86_64/cmTC_c323a_dependency_info.dat -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/lib/darwin/libclang_rt.osx.a ]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
+    arg [-demangle] ==> ignore
+    arg [-lto_library] ==> ignore, skip following value
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib] ==> skip value of -lto_library
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-macosx_version_min] ==> ignore
+    arg [10.13.0] ==> ignore
+    arg [-syslibroot] ==> ignore
+    arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk] ==> ignore
+    arg [-o] ==> ignore
+    arg [/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/cmTC_c323a] ==> ignore
+    arg [-filelist] ==> ignore
+    arg [/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c323a.build/Objects-normal/x86_64/cmTC_c323a.LinkFileList] ==> ignore
+    arg [-object_path_lto] ==> ignore
+    arg [/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c323a.build/Objects-normal/x86_64/cmTC_c323a_lto.o] ==> ignore
+    arg [-no_deduplicate] ==> ignore
+    arg [-v] ==> ignore
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-dependency_info] ==> ignore
+    arg [/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c323a.build/Objects-normal/x86_64/cmTC_c323a_dependency_info.dat] ==> ignore
+    arg [-lSystem] ==> lib [System]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/lib/darwin/libclang_rt.osx.a]
+  Library search paths: [;/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/lib]
+  Framework search paths: [;/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/]
+  remove lib [System]
+  remove lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/lib/darwin/libclang_rt.osx.a]
+  collapse library dir [/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug] ==> [/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug], skipping non-system directory
+  collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/lib] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/lib]
+  collapse framework dir [/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug] ==> [/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug], skipping non-system directory
+  collapse framework dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks]
+  implicit libs: []
+  implicit dirs: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/lib]
+  implicit fwks: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks]
+
+
+
+
+Detecting C [-std=c11] compiler features compiled with the following output:
+Change Dir: /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_fd864" "-configuration" "Debug"
+2018-05-03 16:08:46.992 xcodebuild[80622:3525507] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/WakaTime.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2018-05-03 16:08:46.992 xcodebuild[80622:3525507] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/OFXcodeMenu.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2018-05-03 16:08:46.993 xcodebuild[80622:3525507] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+=== BUILD TARGET cmTC_fd864 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_fd864.build/Objects-normal/x86_64
+write-file /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_fd864.build/Objects-normal/x86_64/cmTC_fd864.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_fd864.build/Objects-normal/x86_64/feature_tests.o /Users/nao/git/_public/marsyas/build/CMakeFiles/feature_tests.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.13 -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/include -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_fd864.build/DerivedSources/x86_64 -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_fd864.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -std=c11 -MMD -MT dependencies -MF /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_fd864.build/Objects-normal/x86_64/feature_tests.d --serialize-diagnostics /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_fd864.build/Objects-normal/x86_64/feature_tests.dia -c /Users/nao/git/_public/marsyas/build/CMakeFiles/feature_tests.c -o /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_fd864.build/Objects-normal/x86_64/feature_tests.o
+
+Ld Debug/cmTC_fd864 normal x86_64
+    cd /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+    export MACOSX_DEPLOYMENT_TARGET=10.13
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -L/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -F/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_fd864.build/Objects-normal/x86_64/cmTC_fd864.LinkFileList -mmacosx-version-min=10.13 -Xlinker -object_path_lto -Xlinker /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_fd864.build/Objects-normal/x86_64/cmTC_fd864_lto.o -Xlinker -no_deduplicate -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_fd864.build/Objects-normal/x86_64/cmTC_fd864_dependency_info.dat -o /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/cmTC_fd864
+
+** BUILD SUCCEEDED **
+
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:1c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c99] compiler features compiled with the following output:
+Change Dir: /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_f4bfb" "-configuration" "Debug"
+2018-05-03 16:08:48.443 xcodebuild[80637:3525568] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/WakaTime.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2018-05-03 16:08:48.443 xcodebuild[80637:3525568] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/OFXcodeMenu.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2018-05-03 16:08:48.444 xcodebuild[80637:3525568] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+=== BUILD TARGET cmTC_f4bfb OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_f4bfb.build/Objects-normal/x86_64
+write-file /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_f4bfb.build/Objects-normal/x86_64/cmTC_f4bfb.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_f4bfb.build/Objects-normal/x86_64/feature_tests.o /Users/nao/git/_public/marsyas/build/CMakeFiles/feature_tests.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.13 -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/include -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_f4bfb.build/DerivedSources/x86_64 -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_f4bfb.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -std=c99 -MMD -MT dependencies -MF /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_f4bfb.build/Objects-normal/x86_64/feature_tests.d --serialize-diagnostics /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_f4bfb.build/Objects-normal/x86_64/feature_tests.dia -c /Users/nao/git/_public/marsyas/build/CMakeFiles/feature_tests.c -o /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_f4bfb.build/Objects-normal/x86_64/feature_tests.o
+
+Ld Debug/cmTC_f4bfb normal x86_64
+    cd /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+    export MACOSX_DEPLOYMENT_TARGET=10.13
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -L/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -F/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_f4bfb.build/Objects-normal/x86_64/cmTC_f4bfb.LinkFileList -mmacosx-version-min=10.13 -Xlinker -object_path_lto -Xlinker /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_f4bfb.build/Objects-normal/x86_64/cmTC_f4bfb_lto.o -Xlinker -no_deduplicate -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_f4bfb.build/Objects-normal/x86_64/cmTC_f4bfb_dependency_info.dat -o /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/cmTC_f4bfb
+
+** BUILD SUCCEEDED **
+
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c90] compiler features compiled with the following output:
+Change Dir: /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_9ecbd" "-configuration" "Debug"
+2018-05-03 16:08:49.859 xcodebuild[80652:3525626] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/WakaTime.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2018-05-03 16:08:49.859 xcodebuild[80652:3525626] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/OFXcodeMenu.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2018-05-03 16:08:49.860 xcodebuild[80652:3525626] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+=== BUILD TARGET cmTC_9ecbd OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_9ecbd.build/Objects-normal/x86_64
+write-file /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_9ecbd.build/Objects-normal/x86_64/cmTC_9ecbd.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_9ecbd.build/Objects-normal/x86_64/feature_tests.o /Users/nao/git/_public/marsyas/build/CMakeFiles/feature_tests.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.13 -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/include -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_9ecbd.build/DerivedSources/x86_64 -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_9ecbd.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -std=c90 -MMD -MT dependencies -MF /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_9ecbd.build/Objects-normal/x86_64/feature_tests.d --serialize-diagnostics /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_9ecbd.build/Objects-normal/x86_64/feature_tests.dia -c /Users/nao/git/_public/marsyas/build/CMakeFiles/feature_tests.c -o /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_9ecbd.build/Objects-normal/x86_64/feature_tests.o
+
+Ld Debug/cmTC_9ecbd normal x86_64
+    cd /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+    export MACOSX_DEPLOYMENT_TARGET=10.13
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -L/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -F/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_9ecbd.build/Objects-normal/x86_64/cmTC_9ecbd.LinkFileList -mmacosx-version-min=10.13 -Xlinker -object_path_lto -Xlinker /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_9ecbd.build/Objects-normal/x86_64/cmTC_9ecbd_lto.o -Xlinker -no_deduplicate -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_9ecbd.build/Objects-normal/x86_64/cmTC_9ecbd_dependency_info.dat -o /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/cmTC_9ecbd
+
+** BUILD SUCCEEDED **
+
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:0c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:0c_variadic_macros
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_7dcfc" "-configuration" "Debug"
+2018-05-03 16:08:51.198 xcodebuild[80668:3525688] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/WakaTime.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2018-05-03 16:08:51.199 xcodebuild[80668:3525688] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/OFXcodeMenu.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2018-05-03 16:08:51.199 xcodebuild[80668:3525688] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+=== BUILD TARGET cmTC_7dcfc OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_7dcfc.build/Objects-normal/x86_64
+write-file /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_7dcfc.build/Objects-normal/x86_64/cmTC_7dcfc.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_7dcfc.build/Objects-normal/x86_64/testCXXCompiler.o testCXXCompiler.cxx normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.13 -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/include -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_7dcfc.build/DerivedSources/x86_64 -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_7dcfc.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_7dcfc.build/Objects-normal/x86_64/testCXXCompiler.d --serialize-diagnostics /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_7dcfc.build/Objects-normal/x86_64/testCXXCompiler.dia -c /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx -o /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_7dcfc.build/Objects-normal/x86_64/testCXXCompiler.o
+
+Ld Debug/cmTC_7dcfc normal x86_64
+    cd /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+    export MACOSX_DEPLOYMENT_TARGET=10.13
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -L/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -F/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_7dcfc.build/Objects-normal/x86_64/cmTC_7dcfc.LinkFileList -mmacosx-version-min=10.13 -Xlinker -object_path_lto -Xlinker /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_7dcfc.build/Objects-normal/x86_64/cmTC_7dcfc_lto.o -Xlinker -no_deduplicate -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_7dcfc.build/Objects-normal/x86_64/cmTC_7dcfc_dependency_info.dat -o /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/cmTC_7dcfc
+
+** BUILD SUCCEEDED **
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_232e5" "-configuration" "Debug"
+2018-05-03 16:08:52.726 xcodebuild[80683:3525764] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/WakaTime.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2018-05-03 16:08:52.726 xcodebuild[80683:3525764] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/OFXcodeMenu.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2018-05-03 16:08:52.727 xcodebuild[80683:3525764] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+=== BUILD TARGET cmTC_232e5 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_232e5.build/Objects-normal/x86_64
+write-file /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_232e5.build/Objects-normal/x86_64/cmTC_232e5.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_232e5.build/Objects-normal/x86_64/CMakeCXXCompilerABI.o /Applications/CMake.app/Contents/share/cmake-3.11/Modules/CMakeCXXCompilerABI.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.13 -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/include -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_232e5.build/DerivedSources/x86_64 -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_232e5.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_232e5.build/Objects-normal/x86_64/CMakeCXXCompilerABI.d --serialize-diagnostics /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_232e5.build/Objects-normal/x86_64/CMakeCXXCompilerABI.dia -c /Applications/CMake.app/Contents/share/cmake-3.11/Modules/CMakeCXXCompilerABI.cpp -o /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_232e5.build/Objects-normal/x86_64/CMakeCXXCompilerABI.o
+
+Ld Debug/cmTC_232e5 normal x86_64
+    cd /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+    export MACOSX_DEPLOYMENT_TARGET=10.13
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -L/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -F/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_232e5.build/Objects-normal/x86_64/cmTC_232e5.LinkFileList -mmacosx-version-min=10.13 -Xlinker -object_path_lto -Xlinker /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_232e5.build/Objects-normal/x86_64/cmTC_232e5_lto.o -Xlinker -no_deduplicate -v -Wl,-v -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_232e5.build/Objects-normal/x86_64/cmTC_232e5_dependency_info.dat -o /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/cmTC_232e5
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.3.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+Found CUDA installation: /usr/local/cuda, version 7.5
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.13.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -o /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/cmTC_232e5 -L/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_232e5.build/Objects-normal/x86_64/cmTC_232e5.LinkFileList -object_path_lto /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_232e5.build/Objects-normal/x86_64/cmTC_232e5_lto.o -no_deduplicate -v -search_paths_first -headerpad_max_install_names -dependency_info /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_232e5.build/Objects-normal/x86_64/cmTC_232e5_dependency_info.dat -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/lib/darwin/libclang_rt.osx.a -F/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug
+@(#)PROGRAM:ld  PROJECT:ld64-305
+configured to support archs: armv6 armv7 armv7s arm64 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em (tvOS)
+Library search paths:
+	/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug
+	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/lib
+Framework search paths:
+	/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug
+	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/
+
+** BUILD SUCCEEDED **
+
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_232e5" "-configuration" "Debug"]
+  ignore line: [2018-05-03 16:08:52.726 xcodebuild[80683:3525764] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/WakaTime.xcplugin' not present in DVTPlugInCompatibilityUUIDs]
+  ignore line: [2018-05-03 16:08:52.726 xcodebuild[80683:3525764] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/OFXcodeMenu.xcplugin' not present in DVTPlugInCompatibilityUUIDs]
+  ignore line: [2018-05-03 16:08:52.727 xcodebuild[80683:3525764] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin' not present in DVTPlugInCompatibilityUUIDs]
+  ignore line: [=== BUILD TARGET cmTC_232e5 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===]
+  ignore line: []
+  ignore line: [Check dependencies]
+  ignore line: []
+  ignore line: [Write auxiliary files]
+  ignore line: [/bin/mkdir -p /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_232e5.build/Objects-normal/x86_64]
+  ignore line: [write-file /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_232e5.build/Objects-normal/x86_64/cmTC_232e5.LinkFileList]
+  ignore line: []
+  ignore line: [CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_232e5.build/Objects-normal/x86_64/CMakeCXXCompilerABI.o /Applications/CMake.app/Contents/share/cmake-3.11/Modules/CMakeCXXCompilerABI.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler]
+  ignore line: [    cd /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp]
+  ignore line: [    export LANG=en_US.US-ASCII]
+  ignore line: [    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.13 -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/include -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_232e5.build/DerivedSources/x86_64 -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_232e5.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_232e5.build/Objects-normal/x86_64/CMakeCXXCompilerABI.d --serialize-diagnostics /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_232e5.build/Objects-normal/x86_64/CMakeCXXCompilerABI.dia -c /Applications/CMake.app/Contents/share/cmake-3.11/Modules/CMakeCXXCompilerABI.cpp -o /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_232e5.build/Objects-normal/x86_64/CMakeCXXCompilerABI.o]
+  ignore line: []
+  ignore line: [Ld Debug/cmTC_232e5 normal x86_64]
+  ignore line: [    cd /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp]
+  ignore line: [    export MACOSX_DEPLOYMENT_TARGET=10.13]
+  ignore line: [    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -L/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -F/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_232e5.build/Objects-normal/x86_64/cmTC_232e5.LinkFileList -mmacosx-version-min=10.13 -Xlinker -object_path_lto -Xlinker /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_232e5.build/Objects-normal/x86_64/cmTC_232e5_lto.o -Xlinker -no_deduplicate -v -Wl,-v -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_232e5.build/Objects-normal/x86_64/cmTC_232e5_dependency_info.dat -o /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/cmTC_232e5]
+  ignore line: [Apple LLVM version 9.0.0 (clang-900.0.39.2)]
+  ignore line: [Target: x86_64-apple-darwin17.3.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+  ignore line: [Found CUDA installation: /usr/local/cuda, version 7.5]
+  reduced line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.13.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -o /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/cmTC_232e5 -L/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_232e5.build/Objects-normal/x86_64/cmTC_232e5.LinkFileList -object_path_lto /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_232e5.build/Objects-normal/x86_64/cmTC_232e5_lto.o -no_deduplicate -v -search_paths_first -headerpad_max_install_names -dependency_info /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_232e5.build/Objects-normal/x86_64/cmTC_232e5_dependency_info.dat -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/lib/darwin/libclang_rt.osx.a -F/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug]
+            to: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.13.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -o /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/cmTC_232e5 -filelist /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_232e5.build/Objects-normal/x86_64/cmTC_232e5.LinkFileList -object_path_lto /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_232e5.build/Objects-normal/x86_64/cmTC_232e5_lto.o -no_deduplicate -v -search_paths_first -headerpad_max_install_names -dependency_info /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_232e5.build/Objects-normal/x86_64/cmTC_232e5_dependency_info.dat -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/lib/darwin/libclang_rt.osx.a ]
+  link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.13.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -o /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/cmTC_232e5 -filelist /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_232e5.build/Objects-normal/x86_64/cmTC_232e5.LinkFileList -object_path_lto /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_232e5.build/Objects-normal/x86_64/cmTC_232e5_lto.o -no_deduplicate -v -search_paths_first -headerpad_max_install_names -dependency_info /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_232e5.build/Objects-normal/x86_64/cmTC_232e5_dependency_info.dat -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/lib/darwin/libclang_rt.osx.a ]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
+    arg [-demangle] ==> ignore
+    arg [-lto_library] ==> ignore, skip following value
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib] ==> skip value of -lto_library
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-macosx_version_min] ==> ignore
+    arg [10.13.0] ==> ignore
+    arg [-syslibroot] ==> ignore
+    arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk] ==> ignore
+    arg [-o] ==> ignore
+    arg [/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/cmTC_232e5] ==> ignore
+    arg [-filelist] ==> ignore
+    arg [/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_232e5.build/Objects-normal/x86_64/cmTC_232e5.LinkFileList] ==> ignore
+    arg [-object_path_lto] ==> ignore
+    arg [/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_232e5.build/Objects-normal/x86_64/cmTC_232e5_lto.o] ==> ignore
+    arg [-no_deduplicate] ==> ignore
+    arg [-v] ==> ignore
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-dependency_info] ==> ignore
+    arg [/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_232e5.build/Objects-normal/x86_64/cmTC_232e5_dependency_info.dat] ==> ignore
+    arg [-lc++] ==> lib [c++]
+    arg [-lSystem] ==> lib [System]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/lib/darwin/libclang_rt.osx.a]
+  Library search paths: [;/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/lib]
+  Framework search paths: [;/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/]
+  remove lib [System]
+  remove lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/lib/darwin/libclang_rt.osx.a]
+  collapse library dir [/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug] ==> [/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug], skipping non-system directory
+  collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/lib] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/lib]
+  collapse framework dir [/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug] ==> [/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug], skipping non-system directory
+  collapse framework dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks]
+  implicit libs: [c++]
+  implicit dirs: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/lib]
+  implicit fwks: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks]
+
+
+
+
+Detecting CXX [-std=c++1z] compiler features compiled with the following output:
+Change Dir: /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_6373f" "-configuration" "Debug"
+2018-05-03 16:08:54.259 xcodebuild[80701:3525905] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/WakaTime.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2018-05-03 16:08:54.259 xcodebuild[80701:3525905] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/OFXcodeMenu.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2018-05-03 16:08:54.260 xcodebuild[80701:3525905] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+=== BUILD TARGET cmTC_6373f OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_6373f.build/Objects-normal/x86_64
+write-file /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_6373f.build/Objects-normal/x86_64/cmTC_6373f.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_6373f.build/Objects-normal/x86_64/feature_tests.o /Users/nao/git/_public/marsyas/build/CMakeFiles/feature_tests.cxx normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.13 -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/include -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_6373f.build/DerivedSources/x86_64 -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_6373f.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -std=c++1z -MMD -MT dependencies -MF /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_6373f.build/Objects-normal/x86_64/feature_tests.d --serialize-diagnostics /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_6373f.build/Objects-normal/x86_64/feature_tests.dia -c /Users/nao/git/_public/marsyas/build/CMakeFiles/feature_tests.cxx -o /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_6373f.build/Objects-normal/x86_64/feature_tests.o
+
+Ld Debug/cmTC_6373f normal x86_64
+    cd /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+    export MACOSX_DEPLOYMENT_TARGET=10.13
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -L/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -F/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_6373f.build/Objects-normal/x86_64/cmTC_6373f.LinkFileList -mmacosx-version-min=10.13 -Xlinker -object_path_lto -Xlinker /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_6373f.build/Objects-normal/x86_64/cmTC_6373f_lto.o -Xlinker -no_deduplicate -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_6373f.build/Objects-normal/x86_64/cmTC_6373f_dependency_info.dat -o /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/cmTC_6373f
+
+** BUILD SUCCEEDED **
+
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++14] compiler features compiled with the following output:
+Change Dir: /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_88f91" "-configuration" "Debug"
+2018-05-03 16:08:55.789 xcodebuild[80716:3525999] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/WakaTime.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2018-05-03 16:08:55.789 xcodebuild[80716:3525999] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/OFXcodeMenu.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2018-05-03 16:08:55.790 xcodebuild[80716:3525999] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+=== BUILD TARGET cmTC_88f91 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_88f91.build/Objects-normal/x86_64
+write-file /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_88f91.build/Objects-normal/x86_64/cmTC_88f91.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_88f91.build/Objects-normal/x86_64/feature_tests.o /Users/nao/git/_public/marsyas/build/CMakeFiles/feature_tests.cxx normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.13 -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/include -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_88f91.build/DerivedSources/x86_64 -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_88f91.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -std=c++14 -MMD -MT dependencies -MF /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_88f91.build/Objects-normal/x86_64/feature_tests.d --serialize-diagnostics /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_88f91.build/Objects-normal/x86_64/feature_tests.dia -c /Users/nao/git/_public/marsyas/build/CMakeFiles/feature_tests.cxx -o /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_88f91.build/Objects-normal/x86_64/feature_tests.o
+
+Ld Debug/cmTC_88f91 normal x86_64
+    cd /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+    export MACOSX_DEPLOYMENT_TARGET=10.13
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -L/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -F/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_88f91.build/Objects-normal/x86_64/cmTC_88f91.LinkFileList -mmacosx-version-min=10.13 -Xlinker -object_path_lto -Xlinker /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_88f91.build/Objects-normal/x86_64/cmTC_88f91_lto.o -Xlinker -no_deduplicate -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_88f91.build/Objects-normal/x86_64/cmTC_88f91_dependency_info.dat -o /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/cmTC_88f91
+
+** BUILD SUCCEEDED **
+
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++11] compiler features compiled with the following output:
+Change Dir: /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_30b29" "-configuration" "Debug"
+2018-05-03 16:08:57.352 xcodebuild[80731:3526139] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/WakaTime.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2018-05-03 16:08:57.352 xcodebuild[80731:3526139] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/OFXcodeMenu.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2018-05-03 16:08:57.352 xcodebuild[80731:3526139] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+=== BUILD TARGET cmTC_30b29 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_30b29.build/Objects-normal/x86_64
+write-file /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_30b29.build/Objects-normal/x86_64/cmTC_30b29.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_30b29.build/Objects-normal/x86_64/feature_tests.o /Users/nao/git/_public/marsyas/build/CMakeFiles/feature_tests.cxx normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.13 -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/include -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_30b29.build/DerivedSources/x86_64 -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_30b29.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -std=c++11 -MMD -MT dependencies -MF /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_30b29.build/Objects-normal/x86_64/feature_tests.d --serialize-diagnostics /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_30b29.build/Objects-normal/x86_64/feature_tests.dia -c /Users/nao/git/_public/marsyas/build/CMakeFiles/feature_tests.cxx -o /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_30b29.build/Objects-normal/x86_64/feature_tests.o
+
+Ld Debug/cmTC_30b29 normal x86_64
+    cd /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+    export MACOSX_DEPLOYMENT_TARGET=10.13
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -L/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -F/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_30b29.build/Objects-normal/x86_64/cmTC_30b29.LinkFileList -mmacosx-version-min=10.13 -Xlinker -object_path_lto -Xlinker /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_30b29.build/Objects-normal/x86_64/cmTC_30b29_lto.o -Xlinker -no_deduplicate -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_30b29.build/Objects-normal/x86_64/cmTC_30b29_dependency_info.dat -o /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/cmTC_30b29
+
+** BUILD SUCCEEDED **
+
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++98] compiler features compiled with the following output:
+Change Dir: /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_39517" "-configuration" "Debug"
+2018-05-03 16:08:58.898 xcodebuild[80746:3526285] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/WakaTime.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2018-05-03 16:08:58.899 xcodebuild[80746:3526285] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/OFXcodeMenu.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2018-05-03 16:08:58.899 xcodebuild[80746:3526285] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+=== BUILD TARGET cmTC_39517 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_39517.build/Objects-normal/x86_64
+write-file /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_39517.build/Objects-normal/x86_64/cmTC_39517.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_39517.build/Objects-normal/x86_64/feature_tests.o /Users/nao/git/_public/marsyas/build/CMakeFiles/feature_tests.cxx normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.13 -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/include -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_39517.build/DerivedSources/x86_64 -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_39517.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -std=c++98 -MMD -MT dependencies -MF /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_39517.build/Objects-normal/x86_64/feature_tests.d --serialize-diagnostics /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_39517.build/Objects-normal/x86_64/feature_tests.dia -c /Users/nao/git/_public/marsyas/build/CMakeFiles/feature_tests.cxx -o /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_39517.build/Objects-normal/x86_64/feature_tests.o
+
+Ld Debug/cmTC_39517 normal x86_64
+    cd /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+    export MACOSX_DEPLOYMENT_TARGET=10.13
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -L/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -F/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_39517.build/Objects-normal/x86_64/cmTC_39517.LinkFileList -mmacosx-version-min=10.13 -Xlinker -object_path_lto -Xlinker /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_39517.build/Objects-normal/x86_64/cmTC_39517_lto.o -Xlinker -no_deduplicate -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_39517.build/Objects-normal/x86_64/cmTC_39517_dependency_info.dat -o /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/cmTC_39517
+
+** BUILD SUCCEEDED **
+
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:0cxx_alias_templates
+    Feature record: CXX_FEATURE:0cxx_alignas
+    Feature record: CXX_FEATURE:0cxx_alignof
+    Feature record: CXX_FEATURE:0cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:0cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:0cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:0cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:0cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:0cxx_default_function_template_args
+    Feature record: CXX_FEATURE:0cxx_defaulted_functions
+    Feature record: CXX_FEATURE:0cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:0cxx_delegating_constructors
+    Feature record: CXX_FEATURE:0cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:0cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:0cxx_explicit_conversions
+    Feature record: CXX_FEATURE:0cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:0cxx_extern_templates
+    Feature record: CXX_FEATURE:0cxx_final
+    Feature record: CXX_FEATURE:0cxx_func_identifier
+    Feature record: CXX_FEATURE:0cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:0cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:0cxx_inline_namespaces
+    Feature record: CXX_FEATURE:0cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:0cxx_local_type_template_args
+    Feature record: CXX_FEATURE:0cxx_long_long_type
+    Feature record: CXX_FEATURE:0cxx_noexcept
+    Feature record: CXX_FEATURE:0cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:0cxx_nullptr
+    Feature record: CXX_FEATURE:0cxx_override
+    Feature record: CXX_FEATURE:0cxx_range_for
+    Feature record: CXX_FEATURE:0cxx_raw_string_literals
+    Feature record: CXX_FEATURE:0cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:0cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:0cxx_rvalue_references
+    Feature record: CXX_FEATURE:0cxx_sizeof_member
+    Feature record: CXX_FEATURE:0cxx_static_assert
+    Feature record: CXX_FEATURE:0cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:0cxx_trailing_return_types
+    Feature record: CXX_FEATURE:0cxx_unicode_literals
+    Feature record: CXX_FEATURE:0cxx_uniform_initialization
+    Feature record: CXX_FEATURE:0cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:0cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:0cxx_variadic_macros
+    Feature record: CXX_FEATURE:0cxx_variadic_templates
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_3a1d4" "-configuration" "Debug"
+2018-05-03 16:09:00.451 xcodebuild[80762:3526371] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/WakaTime.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2018-05-03 16:09:00.452 xcodebuild[80762:3526371] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/OFXcodeMenu.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2018-05-03 16:09:00.452 xcodebuild[80762:3526371] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+=== BUILD TARGET cmTC_3a1d4 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_3a1d4.build/Objects-normal/x86_64
+write-file /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_3a1d4.build/Objects-normal/x86_64/cmTC_3a1d4.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_3a1d4.build/Objects-normal/x86_64/CheckIncludeFile.o CheckIncludeFile.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.13 -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/include -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_3a1d4.build/DerivedSources/x86_64 -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_3a1d4.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_3a1d4.build/Objects-normal/x86_64/CheckIncludeFile.d --serialize-diagnostics /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_3a1d4.build/Objects-normal/x86_64/CheckIncludeFile.dia -c /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c -o /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_3a1d4.build/Objects-normal/x86_64/CheckIncludeFile.o
+
+Ld Debug/cmTC_3a1d4 normal x86_64
+    cd /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+    export MACOSX_DEPLOYMENT_TARGET=10.13
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -L/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -F/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_3a1d4.build/Objects-normal/x86_64/cmTC_3a1d4.LinkFileList -mmacosx-version-min=10.13 -Xlinker -object_path_lto -Xlinker /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_3a1d4.build/Objects-normal/x86_64/cmTC_3a1d4_lto.o -Xlinker -no_deduplicate -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_3a1d4.build/Objects-normal/x86_64/cmTC_3a1d4_dependency_info.dat -o /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/cmTC_3a1d4
+
+** BUILD SUCCEEDED **
+
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_00fdf" "-configuration" "Debug"
+2018-05-03 16:09:01.937 xcodebuild[80777:3526427] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/WakaTime.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2018-05-03 16:09:01.937 xcodebuild[80777:3526427] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/OFXcodeMenu.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2018-05-03 16:09:01.938 xcodebuild[80777:3526427] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+=== BUILD TARGET cmTC_00fdf OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_00fdf.build/Objects-normal/x86_64
+write-file /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_00fdf.build/Objects-normal/x86_64/cmTC_00fdf.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_00fdf.build/Objects-normal/x86_64/CheckIncludeFile.o CheckIncludeFile.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.13 -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/include -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_00fdf.build/DerivedSources/x86_64 -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_00fdf.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_00fdf.build/Objects-normal/x86_64/CheckIncludeFile.d --serialize-diagnostics /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_00fdf.build/Objects-normal/x86_64/CheckIncludeFile.dia -c /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c -o /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_00fdf.build/Objects-normal/x86_64/CheckIncludeFile.o
+
+Ld Debug/cmTC_00fdf normal x86_64
+    cd /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+    export MACOSX_DEPLOYMENT_TARGET=10.13
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -L/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -F/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_00fdf.build/Objects-normal/x86_64/cmTC_00fdf.LinkFileList -mmacosx-version-min=10.13 -Xlinker -object_path_lto -Xlinker /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_00fdf.build/Objects-normal/x86_64/cmTC_00fdf_lto.o -Xlinker -no_deduplicate -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_00fdf.build/Objects-normal/x86_64/cmTC_00fdf_dependency_info.dat -o /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/cmTC_00fdf
+
+** BUILD SUCCEEDED **
+
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_52dd2" "-configuration" "Debug"
+2018-05-03 16:09:03.389 xcodebuild[80795:3526505] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/WakaTime.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2018-05-03 16:09:03.389 xcodebuild[80795:3526505] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/OFXcodeMenu.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2018-05-03 16:09:03.390 xcodebuild[80795:3526505] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+=== BUILD TARGET cmTC_52dd2 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_52dd2.build/Objects-normal/x86_64
+write-file /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_52dd2.build/Objects-normal/x86_64/cmTC_52dd2.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_52dd2.build/Objects-normal/x86_64/CheckIncludeFile.o CheckIncludeFile.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.13 -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/include -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_52dd2.build/DerivedSources/x86_64 -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_52dd2.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_52dd2.build/Objects-normal/x86_64/CheckIncludeFile.d --serialize-diagnostics /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_52dd2.build/Objects-normal/x86_64/CheckIncludeFile.dia -c /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c -o /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_52dd2.build/Objects-normal/x86_64/CheckIncludeFile.o
+
+Ld Debug/cmTC_52dd2 normal x86_64
+    cd /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+    export MACOSX_DEPLOYMENT_TARGET=10.13
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -L/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -F/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_52dd2.build/Objects-normal/x86_64/cmTC_52dd2.LinkFileList -mmacosx-version-min=10.13 -Xlinker -object_path_lto -Xlinker /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_52dd2.build/Objects-normal/x86_64/cmTC_52dd2_lto.o -Xlinker -no_deduplicate -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_52dd2.build/Objects-normal/x86_64/cmTC_52dd2_dependency_info.dat -o /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/cmTC_52dd2
+
+** BUILD SUCCEEDED **
+
+
+
+Determining size of unsigned short passed with the following output:
+Change Dir: /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_3b538" "-configuration" "Debug"
+2018-05-03 16:09:04.878 xcodebuild[80810:3526573] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/WakaTime.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2018-05-03 16:09:04.879 xcodebuild[80810:3526573] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/OFXcodeMenu.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2018-05-03 16:09:04.879 xcodebuild[80810:3526573] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+=== BUILD TARGET cmTC_3b538 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_3b538.build/Objects-normal/x86_64
+write-file /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_3b538.build/Objects-normal/x86_64/cmTC_3b538.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_3b538.build/Objects-normal/x86_64/CMAKE_SIZEOF_UNSIGNED_SHORT.o /Users/nao/git/_public/marsyas/build/CMakeFiles/CheckTypeSize/CMAKE_SIZEOF_UNSIGNED_SHORT.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.13 -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/include -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_3b538.build/DerivedSources/x86_64 -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_3b538.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_3b538.build/Objects-normal/x86_64/CMAKE_SIZEOF_UNSIGNED_SHORT.d --serialize-diagnostics /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_3b538.build/Objects-normal/x86_64/CMAKE_SIZEOF_UNSIGNED_SHORT.dia -c /Users/nao/git/_public/marsyas/build/CMakeFiles/CheckTypeSize/CMAKE_SIZEOF_UNSIGNED_SHORT.c -o /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_3b538.build/Objects-normal/x86_64/CMAKE_SIZEOF_UNSIGNED_SHORT.o
+
+Ld Debug/cmTC_3b538 normal x86_64
+    cd /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+    export MACOSX_DEPLOYMENT_TARGET=10.13
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -L/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -F/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_3b538.build/Objects-normal/x86_64/cmTC_3b538.LinkFileList -mmacosx-version-min=10.13 -Xlinker -object_path_lto -Xlinker /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_3b538.build/Objects-normal/x86_64/cmTC_3b538_lto.o -Xlinker -no_deduplicate -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_3b538.build/Objects-normal/x86_64/cmTC_3b538_dependency_info.dat -o /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/cmTC_3b538
+
+** BUILD SUCCEEDED **
+
+
+
+Determining if the system is big endian passed with the following output:
+Change Dir: /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_a4846" "-configuration" "Debug"
+2018-05-03 16:09:06.432 xcodebuild[80825:3526631] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/WakaTime.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2018-05-03 16:09:06.433 xcodebuild[80825:3526631] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/OFXcodeMenu.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2018-05-03 16:09:06.433 xcodebuild[80825:3526631] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+=== BUILD TARGET cmTC_a4846 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_a4846.build/Objects-normal/x86_64
+write-file /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_a4846.build/Objects-normal/x86_64/cmTC_a4846.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_a4846.build/Objects-normal/x86_64/TestEndianess.o TestEndianess.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.13 -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/include -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_a4846.build/DerivedSources/x86_64 -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_a4846.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_a4846.build/Objects-normal/x86_64/TestEndianess.d --serialize-diagnostics /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_a4846.build/Objects-normal/x86_64/TestEndianess.dia -c /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/TestEndianess.c -o /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_a4846.build/Objects-normal/x86_64/TestEndianess.o
+
+Ld Debug/cmTC_a4846 normal x86_64
+    cd /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+    export MACOSX_DEPLOYMENT_TARGET=10.13
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -L/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -F/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_a4846.build/Objects-normal/x86_64/cmTC_a4846.LinkFileList -mmacosx-version-min=10.13 -Xlinker -object_path_lto -Xlinker /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_a4846.build/Objects-normal/x86_64/cmTC_a4846_lto.o -Xlinker -no_deduplicate -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_a4846.build/Objects-normal/x86_64/cmTC_a4846_dependency_info.dat -o /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/cmTC_a4846
+
+** BUILD SUCCEEDED **
+
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the system is big endian passed with the following output:
+Change Dir: /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_d7df7" "-configuration" "Debug"
+2018-05-03 16:09:08.534 xcodebuild[80840:3526716] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/WakaTime.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2018-05-03 16:09:08.535 xcodebuild[80840:3526716] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/OFXcodeMenu.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2018-05-03 16:09:08.535 xcodebuild[80840:3526716] [MT] PluginLoading: Required plug-in compatibility UUID B395D63E-9166-4CD6-9287-6889D507AD6A for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+=== BUILD TARGET cmTC_d7df7 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d7df7.build/Objects-normal/x86_64
+write-file /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d7df7.build/Objects-normal/x86_64/cmTC_d7df7.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_d7df7.build/Objects-normal/x86_64/TestEndianess.o TestEndianess.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.13 -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/include -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d7df7.build/DerivedSources/x86_64 -I/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d7df7.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d7df7.build/Objects-normal/x86_64/TestEndianess.d --serialize-diagnostics /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d7df7.build/Objects-normal/x86_64/TestEndianess.dia -c /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/TestEndianess.c -o /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d7df7.build/Objects-normal/x86_64/TestEndianess.o
+
+Ld Debug/cmTC_d7df7 normal x86_64
+    cd /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp
+    export MACOSX_DEPLOYMENT_TARGET=10.13
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -L/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -F/Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d7df7.build/Objects-normal/x86_64/cmTC_d7df7.LinkFileList -mmacosx-version-min=10.13 -Xlinker -object_path_lto -Xlinker /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d7df7.build/Objects-normal/x86_64/cmTC_d7df7_lto.o -Xlinker -no_deduplicate -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d7df7.build/Objects-normal/x86_64/cmTC_d7df7_dependency_info.dat -o /Users/nao/git/_public/marsyas/build/CMakeFiles/CMakeTmp/Debug/cmTC_d7df7
+
+** BUILD SUCCEEDED **
+
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+

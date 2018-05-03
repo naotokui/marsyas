@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "92DE618A50944DBFBCEB50B6"
-               BuildableName = "ibt_.mxo"
+               BuildableName = "ibt2~.mxo"
                BlueprintName = "ibt_"
                ReferencedContainer = "container:build/marsyas.xcodeproj">
             </BuildableReference>
@@ -34,7 +34,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "92DE618A50944DBFBCEB50B6"
-            BuildableName = "ibt_.mxo"
+            BuildableName = "ibt2~.mxo"
             BlueprintName = "ibt_"
             ReferencedContainer = "container:build/marsyas.xcodeproj">
          </BuildableReference>
@@ -58,7 +58,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "92DE618A50944DBFBCEB50B6"
-            BuildableName = "ibt_.mxo"
+            BuildableName = "ibt2~.mxo"
             BlueprintName = "ibt_"
             ReferencedContainer = "container:build/marsyas.xcodeproj">
          </BuildableReference>
@@ -77,7 +77,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "92DE618A50944DBFBCEB50B6"
-            BuildableName = "ibt_.mxo"
+            BuildableName = "ibt2~.mxo"
             BlueprintName = "ibt_"
             ReferencedContainer = "container:build/marsyas.xcodeproj">
          </BuildableReference>

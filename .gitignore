@@ -14,8 +14,6 @@
 *.mp3
 builddebug/
 build/bin/
-build/CMakeFiles/
-build/CMakeScripts/
 build/doc/
 
 build/marsyas.build/
