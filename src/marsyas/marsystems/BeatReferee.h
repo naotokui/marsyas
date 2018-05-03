@@ -225,6 +225,8 @@ public:
   void killAgent(mrs_natural agentIndex, mrs_string motif, mrs_natural callAgent = -1);
   void createChildren(mrs_natural agentIndex, mrs_natural oldPeriod, mrs_natural prevBeat, mrs_natural error,
                       mrs_real agentScore, mrs_real beatCount);
+  void createBackingRhythmChildren(mrs_natural agentIndex, mrs_natural oldPeriod, mrs_natural prevBeat, mrs_natural error,
+                                   mrs_real agentScore, mrs_real beatCount);
   mrs_realvec calculateNewHypothesis(mrs_natural agentIndex, mrs_natural oldPeriod,
                                      mrs_natural prevBeat, mrs_natural error);
   mrs_realvec calcChildrenHypothesis(mrs_natural oldPeriod, mrs_natural prevBeat, mrs_natural error);

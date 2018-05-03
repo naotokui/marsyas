@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 92.0, 1498.0, 767.0 ],
+		"rect" : [ 58.0, 114.0, 1498.0, 767.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,103 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"autosave" : 1,
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"id" : "obj-31",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 8,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "signal", "signal", "", "list", "int", "", "", "" ],
+					"patching_rect" : [ 392.0, 211.0, 300.0, 100.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 300.0, 100.0 ],
+					"save" : [ "#N", "vst~", "loaduniqueid", 0, "AUFilter.auinfo", ";" ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_invisible" : 1,
+							"parameter_longname" : "vst~",
+							"parameter_shortname" : "vst~",
+							"parameter_type" : 3
+						}
+
+					}
+,
+					"saved_object_attributes" : 					{
+						"annotation_name" : "",
+						"parameter_enable" : 1
+					}
+,
+					"snapshot" : 					{
+						"filetype" : "C74Snapshot",
+						"version" : 2,
+						"minorversion" : 0,
+						"name" : "snapshotlist",
+						"origin" : "vst~",
+						"type" : "list",
+						"subtype" : "Undefined",
+						"embed" : 1,
+						"snapshot" : 						{
+							"pluginname" : "AUFilter.auinfo",
+							"plugindisplayname" : "AUFilter",
+							"pluginsavedname" : "AUFilter",
+							"pluginsaveduniqueid" : 0,
+							"version" : 1,
+							"isbank" : 0,
+							"isbase64" : 1,
+							"sliderorder" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 ],
+							"slidervisibility" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
+							"blob" : "289.hAGaoMGcv.y0AHv.DTfAGfPBJr.CM3vVFIWYwUWYtMVdOsDUzkGbkwUag4VclE1XzUmbkIGUtEVakQEYgQWXWYWYxMWZu41UyUmXzkGbkAQ.RDVclgmDgAGbrgUUtQWZzwVYj8DDDB..............O...............AHTto4M...f.A63KeA...L.Qb.D.....D.........PA.A.......XPQb.D.....G..........B.A.......jPQbBD.....J.........vB.A.......v..........MXDG.A....fC......A.RXVZrQGBWLBJ0nyOG8TTVsEYq2N.......P.A.........vC....................xC"
+						}
+,
+						"snapshotlist" : 						{
+							"current_snapshot" : 0,
+							"entries" : [ 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "AUFilter",
+									"origin" : "AUFilter.auinfo",
+									"type" : "AudioUnit",
+									"subtype" : "AudioEffect",
+									"embed" : 0,
+									"snapshot" : 									{
+										"pluginname" : "AUFilter.auinfo",
+										"plugindisplayname" : "AUFilter",
+										"pluginsavedname" : "AUFilter",
+										"pluginsaveduniqueid" : 0,
+										"version" : 1,
+										"isbank" : 0,
+										"isbase64" : 1,
+										"sliderorder" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 ],
+										"slidervisibility" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
+										"blob" : "289.hAGaoMGcv.y0AHv.DTfAGfPBJr.CM3vVFIWYwUWYtMVdOsDUzkGbkwUag4VclE1XzUmbkIGUtEVakQEYgQWXWYWYxMWZu41UyUmXzkGbkAQ.RDVclgmDgAGbrgUUtQWZzwVYj8DDDB..............O...............AHTto4M...f.A63KeA...L.Qb.D.....D.........PA.A.......XPQb.D.....G..........B.A.......jPQbBD.....J.........vB.A.......v..........MXDG.A....fC......A.RXVZrQGBWLBJ0nyOG8TTVsEYq2N.......P.A.........vC....................xC"
+									}
+,
+									"fileref" : 									{
+										"name" : "AUFilter",
+										"filename" : "AUFilter.maxsnap",
+										"filepath" : "~/Documents/Max 7/Snapshots",
+										"filepos" : -1,
+										"snapshotfileid" : "e8d7fc619f1c4a9c5c11677cc01e5330"
+									}
+
+								}
+ ]
+						}
+
+					}
+,
+					"style" : "",
+					"text" : "vst~ AUFilter.auinfo",
+					"varname" : "vst~",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-26",
 					"maxclass" : "button",
@@ -111,7 +208,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 91.0, 463.0, 42.0, 22.0 ],
+					"patching_rect" : [ 118.0, 479.0, 42.0, 22.0 ],
 					"style" : "",
 					"text" : "*~ 0.2"
 				}
@@ -204,9 +301,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 126.0, 259.0, 37.0, 22.0 ],
+					"patching_rect" : [ 95.0, 241.0, 57.0, 22.0 ],
 					"style" : "",
-					"text" : "adc~"
+					"text" : "adc~ 7 8"
 				}
 
 			}
@@ -339,7 +436,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 91.0, 422.5, 75.0, 22.0 ],
+					"patching_rect" : [ 118.0, 438.5, 75.0, 22.0 ],
 					"style" : "",
 					"text" : "cycle~ 1000"
 				}
@@ -385,7 +482,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "float" ],
-					"patching_rect" : [ 204.0, 337.0, 681.0, 22.0 ],
+					"patching_rect" : [ 180.0, 389.0, 681.0, 22.0 ],
 					"style" : "",
 					"text" : "ibt2~ @winSize 256 @hopSize 128 @inductionTime 5 @minBPM 110 @maxBPM 140 @stateRecovery 0 @beatsForTempo 4"
 				}
@@ -397,7 +494,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 84.0, 576.0, 45.0, 45.0 ],
+					"patching_rect" : [ 80.0, 620.5, 45.0, 45.0 ],
 					"style" : ""
 				}
 
@@ -532,31 +629,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-31", 0 ],
+					"order" : 1,
+					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-35", 0 ],
 					"order" : 2,
-					"source" : [ "obj-19", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-8", 1 ],
-					"source" : [ "obj-19", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
-					"order" : 3,
-					"source" : [ "obj-19", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
-					"order" : 1,
 					"source" : [ "obj-19", 0 ]
 				}
 
@@ -606,7 +688,40 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-8", 1 ],
+					"order" : 0,
 					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"order" : 1,
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 1 ],
+					"order" : 1,
+					"source" : [ "obj-31", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"order" : 2,
+					"source" : [ "obj-31", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"order" : 0,
+					"source" : [ "obj-31", 0 ]
 				}
 
 			}
@@ -662,7 +777,18 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-31" : [ "vst~", "vst~", 0 ]
+		}
+,
 		"dependency_cache" : [ 			{
+				"name" : "AUFilter.maxsnap",
+				"bootpath" : "~/Documents/Max 7/Snapshots",
+				"patcherrelativepath" : "../../../../../../../../Documents/Max 7/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "ibt2~.mxo",
 				"type" : "iLaX"
 			}

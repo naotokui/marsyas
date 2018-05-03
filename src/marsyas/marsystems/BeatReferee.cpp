@@ -1487,7 +1487,8 @@ BeatReferee::createChildren(mrs_natural agentIndex, mrs_natural oldPeriod, mrs_n
     createNewAgent((mrs_natural) newHypotheses(1,0), (mrs_natural) newHypotheses(1,1), newScore, beatCount, agentIndex);
   if(child3Factor_ != -1.0 && newHypotheses(2,2) == 1)
     createNewAgent((mrs_natural) newHypotheses(2,0), (mrs_natural) newHypotheses(2,1),  newScore, beatCount, agentIndex);
-   // children 4 - always look for half-beat diff
+   
+  // children 4 - always look for half-beat diff
    createNewAgent((mrs_natural) newHypotheses(3,0), (mrs_natural) newHypotheses(3,1),  newScore, beatCount, agentIndex);
     
   //Display Created BeatAgent:
@@ -1497,6 +1498,21 @@ BeatReferee::createChildren(mrs_natural agentIndex, mrs_natural oldPeriod, mrs_n
   //		newHypotheses(0,0) << " NextBeat2:" << newHypotheses(1,1) << " NewPeriod2:" << newHypotheses(1,0) <<
   //		" NextBeat3:" << newHypotheses(2,1) << " NewPeriod3:" << newHypotheses(2,0) <<
   //		" Error:" << error << " Score:" << newScore << endl;
+}
+
+//Routine for creating new agents from existent one
+void
+BeatReferee::createBackingRhythmChildren(mrs_natural agentIndex, mrs_natural oldPeriod, mrs_natural prevBeat, mrs_natural error,
+                            mrs_real agentScore, mrs_real beatCount)
+{
+    mrs_real newScore;
+    if(agentScore >= 0.0)
+        newScore = agentScore * childrenScoreFactor_;
+    else
+        newScore = agentScore / childrenScoreFactor_;
+    
+    // children 4 - always look for half-beat diff
+    createNewAgent((mrs_natural) oldPeriod, (mrs_natural) (prevBeat + oldPeriod * 0.50),  newScore, beatCount, agentIndex);
 }
 
 //Routine for updating existent agent hypothesis
@@ -2295,6 +2311,11 @@ BeatReferee::myProcess(realvec& in, realvec& out)
           //if(o == 21)
           //	cout << "T: " << timeElapsed_ << " EVAL - Agent: " << o << "; ERROR: " << agentError << endl;
 
+            // create half-beat shift rhythm hypothesis
+            if (o == bestAgentIndex_){
+                createBackingRhythmChildren(o, agentPeriod, agentPrevBeat, agentError, score_(o), beatCounter_(o));
+            }
+            
           //If a beat of an agent is inside its Inner tolerance but it has an error:
           //Update agent phase and period hypotheses:
           if(agentTolerance == INNER)
@@ -2308,6 +2329,7 @@ BeatReferee::myProcess(realvec& in, realvec& out)
             {
               updateAgentHypothesis(o, agentPeriod, agentPrevBeat, agentError);
             }
+//            createBackingRhythmChildren(o, agentPeriod, agentPrevBeat, agentError, score_(o), beatCounter_(o));
           }
 
           //If a beat of an agent is detected outside its Inner tolerance window:

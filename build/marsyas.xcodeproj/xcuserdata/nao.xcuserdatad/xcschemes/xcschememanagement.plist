@@ -7,17 +7,17 @@
 		<key>ALL_BUILD.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>3</integer>
 		</dict>
 		<key>WHaSp.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>22</integer>
+			<integer>23</integer>
 		</dict>
 		<key>ZERO_CHECK.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>2</integer>
 		</dict>
 		<key>aim.xcscheme</key>
 		<dict>
@@ -62,7 +62,7 @@
 		<key>install.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>4</integer>
 		</dict>
 		<key>kea.xcscheme</key>
 		<dict>
@@ -82,17 +82,17 @@
 		<key>marsyas-latency-test.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>37</integer>
+			<integer>36</integer>
 		</dict>
 		<key>marsyas-run.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>36</integer>
+			<integer>37</integer>
 		</dict>
 		<key>marsyas-script-cpp.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>39</integer>
+			<integer>38</integer>
 		</dict>
 		<key>marsyas.xcscheme</key>
 		<dict>
@@ -102,12 +102,12 @@
 		<key>mirex_extract.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>38</integer>
+			<integer>40</integer>
 		</dict>
 		<key>mirex_train_and_predict.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>40</integer>
+			<integer>39</integer>
 		</dict>
 		<key>mkcollection.xcscheme</key>
 		<dict>
@@ -117,7 +117,7 @@
 		<key>mudbox.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>25</integer>
+			<integer>24</integer>
 		</dict>
 		<key>nextract.xcscheme</key>
 		<dict>
@@ -197,7 +197,7 @@
 		<key>rhythmMap.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>24</integer>
+			<integer>26</integer>
 		</dict>
 		<key>sfinfo.xcscheme</key>
 		<dict>
@@ -212,12 +212,12 @@
 		<key>sfplugin.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>23</integer>
+			<integer>22</integer>
 		</dict>
 		<key>sound2png.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>26</integer>
+			<integer>25</integer>
 		</dict>
 		<key>sound2sound.xcscheme</key>
 		<dict>

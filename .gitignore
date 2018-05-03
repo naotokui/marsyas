@@ -20,3 +20,8 @@ build/marsyas.build/
 
 
 build/src/marsyas/marsyas.build/
+*.xcscheme
+*.xcbkptlist
+*.xcuserstate
+build/src/marsyas_max-msp/marsyas.build/Release/ibt_.build/dgph
+*.xcuserstate
