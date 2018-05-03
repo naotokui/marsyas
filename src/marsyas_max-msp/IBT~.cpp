@@ -5,12 +5,12 @@
 #define MIN_BPM 81 //minimum tempo considered, in BPMs (50) [80 -> to prevent octave error]
 #define MAX_BPM 160 //maximum tempo considered, in BPMs (250) [160 -> to prevent octave error]
 #define NR_AGENTS 30 //Nr. of agents in the pool (30)
-#define LFT_OUTTER_MARGIN 0.20 //(Inertia1.1) The size of the outer half-window (in % of the IBI) before the predicted beat time (0.20)
+#define LFT_OUTTER_MARGIN 0.30 //(Inertia1.1) The size of the outer half-window (in % of the IBI) before the predicted beat time (0.20)
 #define RGT_OUTTER_MARGIN 0.30 //(Inertia1.2) The size of the outer half-window (in % of the IBI) after the predicted beat time (0.30)
 #define INNER_MARGIN 4.0 //(Inertia1.3) Inner tolerance window margin size (= half inner window size -> in ticks) (4.0)
 #define OBSOLETE_FACTOR 0.70 //An agent is killed if, at any time (after the initial Xsecs-defined in BeatReferee), the difference between its score and the bestScore is below OBSOLETE_FACTOR * bestScore (0.8)
-#define LOST_FACTOR 4 //An agent is killed if it become lost, i.e. if it found LOST_FACTOR consecutive beat predictions outside its inner tolerance window (8)
-#define CHILDREN_SCORE_FACTOR 0.9 //(Inertia2) Each created agent imports its father score multiplied (or divided if negative) by this factor (0.8)
+#define LOST_FACTOR 8 //An agent is killed if it become lost, i.e. if it found LOST_FACTOR consecutive beat predictions outside its inner tolerance window (8)
+#define CHILDREN_SCORE_FACTOR 0.95 //(Inertia2) Each created agent imports its father score multiplied (or divided if negative) by this factor (0.8)
 #define BEST_FACTOR 1.0 //(Inertia3) Mutiple of the bestScore an agent's score must have for replacing the current best agent (1.0)
 #define CORRECTION_FACTOR 0.25 //(Inertia4) correction factor for compensating each agents' own {phase, period} hypothesis errors (0.25)
 #define EQ_PERIOD 1 //Period threshold which identifies two agents as predicting the same period (IBI, in ticks) (1)
@@ -21,7 +21,7 @@
 #define TRIGGER_GT_TOL 5 //Number of miss computed beats, in comparison to ground-truth beat-times, tolerated before triggering new induction (used in trigger "groundtruth" mode) -> can be defined via -tigt_tol 
 #define TRIGGER_BEST_FACTOR 1.0 //Proportion of the current best agent score which is inherited by the agents created at each triggered induction [shouldn't be much higher than 1, for not inflating scores two much] (1.0)
 #define SUPERVISED_TRIGGER_THRES 0.0 //Degree (in percentage) of mean bestScore decrease to trigger a new induction in supervised induction mode (0.03)
-#define BEAT_TRANSITION_TOL -1 //Tolerance for handling beats at transitions between agents [-1 for unconsider it]: (0.6)
+#define BEAT_TRANSITION_TOL 0.80 //Tolerance for handling beats at transitions between agents [-1 for unconsider it]: (0.6)
 //In causal mode, if between two consecutive beats there is over a BEAT_TRANSITION_TOL decrease in current IBI the second beat is unconsidered;
 //In non-causal mode, if between a son's first beat and its father's last there is over a BEAT_TRANSITION_TOL descrease on the father last IBI the son's first beat is unconsidered;
 //In non-causal mode, if between a son's first beat and its father's last there is over a BEAT_TRANSITION_TOL increase on the father last IBI the son's first beat shall be its father's next beat, and the second beat shall be its assigned first.
@@ -378,66 +378,6 @@ MarSystem* MarMaxIBT::createMarsyasNet()
   beattracker->linkControl("FlowThru/initialhypotheses/PhaseLock/phaselock/mrs_real/srcFs",
                            "FlowThru/tempoinduction/TempoHypotheses/tempohyp/mrs_real/srcFs");
 
-  //if ground-truth induction or ground-truth induction mode
-  if(!strcmp(groundtruth_induction.c_str(), "-1") == 0 || strcmp(induction_mode.c_str(), "groundtruth") == 0)
-  {
-    //if not in ground-truth induction mode
-    //&& if gt induction mode different than the defined
-    if(!strcmp(induction_mode.c_str(), "groundtruth") == 0 &&
-        (!strcmp(groundtruth_induction.c_str(), "2b2") == 0 && !strcmp(groundtruth_induction.c_str(), "2b") == 0 &&
-         !strcmp(groundtruth_induction.c_str(), "1b1") == 0 && !strcmp(groundtruth_induction.c_str(), "1b") == 0 &&
-         !strcmp(groundtruth_induction.c_str(), "p") == 0 && !strcmp(groundtruth_induction.c_str(), "p_mr") == 0 &&
-         !strcmp(groundtruth_induction.c_str(), "p_nr") == 0))
-    {
-      cerr << "Invalid induction groundtruth mode - Please define one of the following: \"2b2\";\"1b1\";\"2b\";\"1b\";\"p\";\"p_mr\";\"p_nr\"" << endl;
-      cerr << "Running \"regular\" induction..." << endl;
-      beattracker->updControl("FlowThru/initialhypotheses/PhaseLock/phaselock/mrs_string/mode", "regular");
-    }
-    else
-    {
-      if(strcmp(groundtruth_file.c_str(), "-1") == 0) //if ground-truth file not defined
-      {
-        //force regular induction
-        beattracker->updControl("FlowThru/initialhypotheses/PhaseLock/phaselock/mrs_string/mode", "regular");
-        cerr << "Please specify the ground-truth beat-times file path via -gt \"path/file.(beats\\txt)\"" << endl;
-        cerr << "Running \"regular\" induction..." << endl;
-        if(strcmp(induction_mode.c_str(), "groundtruth") == 0) //and requested ground-truth induction operation
-        {
-          cout << "Running \"single\" induction operation" << endl;
-          induction_mode = "single"; //force single induction mode
-        }
-      }
-      else
-      {
-        mrs_bool readGTFileOk = false;
-
-        //check if ground-truth induction fixed (unchanged) within induction window
-        if(strcmp(groundtruth_induction.c_str(), "2b2") == 0 || strcmp(groundtruth_induction.c_str(), "1b1") == 0)
-          readGTFileOk = false; //HARD-CODED
-        //readGTFileOk = readGTBeatsFile(beattracker, groundtruth_file, sfName, true);
-        else readGTFileOk = false; //HARD-CODED
-        //readGTFileOk = readGTBeatsFile(beattracker, groundtruth_file, sfName, false);
-
-        if(readGTFileOk) //if could read beat-times gt file (if couldn't read => regular induction)
-        {
-          if(strcmp(groundtruth_induction.c_str(), "-1") == 0) //if no induction mode defined
-          {
-            //assume regular induction mode
-            groundtruth_induction = "regular";
-            cerr << "Trigger Induction: no induction mode defined (define it via -gti option) -> \"regular\" assumed" << endl;
-          }
-
-          //assign requested induction mode
-          beattracker->updControl("FlowThru/initialhypotheses/PhaseLock/phaselock/mrs_string/mode", groundtruth_induction);
-
-          cout << "Beat-Times Ground-Truth File: " << groundtruth_file << endl;
-        }
-        else
-          beattracker->updControl("FlowThru/initialhypotheses/PhaseLock/phaselock/mrs_string/mode", "regular");
-      }
-    }
-  }
-
   //if requested induction operation (other than ground-truth - treated above)
   if(!strcmp(induction_mode.c_str(), "-1") == 0)
   {
@@ -455,17 +395,9 @@ MarSystem* MarMaxIBT::createMarsyasNet()
       avoid_metrical_changes = true; //always run repeated induction modes with metrical change avoidance
     }
     cout << "Requested induction in \"" << induction_mode << "\" operation" << endl;
-
-    //handle beat error tolerance, used in trigger groundtruth mode (and assure that beat-times ground file is passed)
-    if(strcmp(induction_mode.c_str(), "groundtruth") == 0)
-    {
-      if(triggergt_tol == 5)
-        cerr << "Beat Error Tolerance: " <<
-             triggergt_tol << " (if wanted different tolerance please define it through -tigt_tol option)" << endl;
-      else
-        cout << "Beat Error Tolerance: " << triggergt_tol << endl;
-    }
   }
+    
+    post(induction_mode.c_str());
 
   beattracker->linkControl("BeatReferee/br/mrs_bool/resetFeatWindow", "ShiftInput/acc/mrs_bool/clean");
 
@@ -494,18 +426,18 @@ MarSystem* MarMaxIBT::createMarsyasNet()
   beattracker->linkControl("BeatTimesSink/sink/mrs_bool/nonCausal",
                            "BeatReferee/br/mrs_bool/nonCausal");
 
-  if(avoid_metrical_changes)
-  {
-    minBPM_ = 81;
-    maxBPM_ = 160;
-    cerr << "Avoid metrical changes mode activated (default in causal operation)." << endl;
-  }
-  else
-  {
+//  if(avoid_metrical_changes)
+//  {
+//    minBPM_ = 81;
+//    maxBPM_ = 160;
+//    cerr << "Avoid metrical changes mode activated (default in causal operation)." << endl;
+//  }
+//  else
+//  {
     minBPM_ = min_bpm;
     maxBPM_ = max_bpm;
-  }
-  cerr << "Considered tempo in the range [" << minBPM_ << "-" << maxBPM_ << "]BPM." << endl;
+//  }
+    post("Considered tempo in the range %d to %d BPM.", minBPM_, maxBPM_ );
 
 
   ///////////////////////////////////////////////////////////////////////////////////////

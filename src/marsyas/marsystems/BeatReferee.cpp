@@ -2311,10 +2311,10 @@ BeatReferee::myProcess(realvec& in, realvec& out)
           //if(o == 21)
           //	cout << "T: " << timeElapsed_ << " EVAL - Agent: " << o << "; ERROR: " << agentError << endl;
 
-            // create half-beat shift rhythm hypothesis
-            if (o == bestAgentIndex_){
-                createBackingRhythmChildren(o, agentPeriod, agentPrevBeat, agentError, score_(o), beatCounter_(o));
-            }
+        // create half-beat shift rhythm hypothesis
+        if (o == bestAgentIndex_){
+            createBackingRhythmChildren(o, agentPeriod, agentPrevBeat, agentError, score_(o) * 0.50, beatCounter_(o));
+        }
             
           //If a beat of an agent is inside its Inner tolerance but it has an error:
           //Update agent phase and period hypotheses:
