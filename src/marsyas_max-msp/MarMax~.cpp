@@ -11,7 +11,7 @@ int main(void)
   t_class *c;
 
   //NOTE that the name specified in class_new() first arg must be the same as the external filename
-  c = class_new("ibt2~", (method)MarMax_new, (method)dsp_free, (long)sizeof(t_MarMax), (method)0L, A_GIMME, 0);
+  c = class_new("ibt3~", (method)MarMax_new, (method)dsp_free, (long)sizeof(t_MarMax), (method)0L, A_GIMME, 0);
 
   class_addmethod(c, (method)MarMax_float,		"float",	A_FLOAT, 0);
   class_addmethod(c, (method)MarMax_dsp,		"dsp",		A_CANT, 0);
@@ -170,7 +170,7 @@ void *MarMax_new(t_symbol *s, long argc, t_atom *argv)
   if (x = ((t_MarMax *)object_alloc((t_class*)MarMax_class)))
   {
     object_post((t_object *)x, "v1.0 - implemented by João Lobato Oliveira from the SMCGroup at INESC Porto, Portugal (smc.inescporto.pt)", s->s_name);
-      object_post((t_object *)x, "modified by nao tokui",  s->s_name);
+      object_post((t_object *)x, "modified by nao tokui 2019",  s->s_name);
     //object_post((t_object *)x, "a new %s object was instantiated: 0x%X", s->s_name, x);
     //object_post((t_object *)x, "%s has %ld arguments", s->s_name, argc);
 

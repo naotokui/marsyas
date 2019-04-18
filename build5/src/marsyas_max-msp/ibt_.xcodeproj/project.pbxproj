@@ -1,0 +1,1131 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		18332C5B8A8B49B4BD98E9E0 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4C676B92E7A5493C8945004E /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				F0654717FD114F218C7FD4B1 /* CMake Rules */,
+			);
+			dependencies = (
+				0F1000A471D24A719C35A809 /* PBXTargetDependency */,
+				E258FE7B256E41F2873D2D7C /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		60A0135D722B41A487B582F6 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = DCADF12F03D94849BC68B618 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				AA4D8E22776645F6A464E9D2 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				1913BAFC2952438CBCEAB742 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		9B349A7CC8A54A53897CE788 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 3558751A32964892B4449D33 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				962D0660EFE7416B9D1A948A /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		F32F42E0229E48479FE983B8 /* package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8AAF4962A2214F9A9C994153 /* Build configuration list for PBXAggregateTarget "package" */;
+			buildPhases = (
+				DACC9E416AB446A4B7A76161 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				CECD6F482973443CB13E21B7 /* PBXTargetDependency */,
+			);
+			name = package;
+			productName = package;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0029E247A60D4CE9841F0A03 /* /Users/nao/git/marsyas/src/marsyas_max-msp/MarMax~.cpp */ = {isa = PBXBuildFile; fileRef = 8F73993FD09648BE80DCD6E8 /* /Users/nao/git/marsyas/src/marsyas_max-msp/MarMax~.cpp */; };
+		4042070E7FD64CAEBF5EE0F5 /* /Users/nao/git/marsyas/src/marsyas_max-msp/IBT~.h */ = {isa = PBXBuildFile; fileRef = 0036E5615C3E493A94E33825 /* /Users/nao/git/marsyas/src/marsyas_max-msp/IBT~.h */; };
+		864D3185109B4C298694462C /* /Users/nao/git/marsyas/src/marsyas_max-msp/IBT~.cpp */ = {isa = PBXBuildFile; fileRef = A752AA621B89470BA62D9E98 /* /Users/nao/git/marsyas/src/marsyas_max-msp/IBT~.cpp */; };
+		CD6091BBADB54C1FA8B873ED /* /Users/nao/git/marsyas/src/marsyas_max-msp/MarMax~.h */ = {isa = PBXBuildFile; fileRef = E2025D0D90DB413DAE02F023 /* /Users/nao/git/marsyas/src/marsyas_max-msp/MarMax~.h */; };
+		D0B27294B1574CAFA22CDEF4 /* /Users/nao/git/marsyas/build5/src/marsyas_max-msp/CMakeFiles/ibt_.dir/Info.plist */ = {isa = PBXBuildFile; fileRef = A786F559AE8E48B9ADB67A27 /* /Users/nao/git/marsyas/build5/src/marsyas_max-msp/CMakeFiles/ibt_.dir/Info.plist */; };
+		E7F4FEEE86B24DCC9F471B8C /* /Users/nao/git/marsyas/src/marsyas_max-msp/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = B4CF300266374B9D9EAC9CB4 /* /Users/nao/git/marsyas/src/marsyas_max-msp/CMakeLists.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		5CE054A70E3D4FD9B1C9EA08 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		6EFE9025694E4419928761E5 /* Profile */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Profile;
+		};
+		780E868126D1420D8B3A1CC1 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		9D1AF53D776745F0BD654F28 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		B877B7764C0B48599DBC7CE8 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		27F64C251A6B45C392366FEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE32610E7F1E4400B2E37CF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18332C5B8A8B49B4BD98E9E0;
+			remoteInfo = ALL_BUILD;
+		};
+		3FD3C1748AE846CBB997B73B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE32610E7F1E4400B2E37CF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18332C5B8A8B49B4BD98E9E0;
+			remoteInfo = ALL_BUILD;
+		};
+		892C2E96F540437F9DD8AA4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE32610E7F1E4400B2E37CF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE3B0B83A98C4FE7B251C5D0;
+			remoteInfo = ibt_;
+		};
+		956F26F601314EABB0617B26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE32610E7F1E4400B2E37CF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B349A7CC8A54A53897CE788;
+			remoteInfo = ZERO_CHECK;
+		};
+		9FE550807BE04B6D8E5D7B0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE32610E7F1E4400B2E37CF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B349A7CC8A54A53897CE788;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0036E5615C3E493A94E33825 /* /Users/nao/git/marsyas/src/marsyas_max-msp/IBT~.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = "IBT~.h"; path = "IBT~.h"; sourceTree = SOURCE_ROOT; };
+		14CEE187072E42698059216C /* ibt_ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = ibt_; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F73993FD09648BE80DCD6E8 /* /Users/nao/git/marsyas/src/marsyas_max-msp/MarMax~.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "MarMax~.cpp"; path = "MarMax~.cpp"; sourceTree = SOURCE_ROOT; };
+		A752AA621B89470BA62D9E98 /* /Users/nao/git/marsyas/src/marsyas_max-msp/IBT~.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "IBT~.cpp"; path = "IBT~.cpp"; sourceTree = SOURCE_ROOT; };
+		A786F559AE8E48B9ADB67A27 /* /Users/nao/git/marsyas/build5/src/marsyas_max-msp/CMakeFiles/ibt_.dir/Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; name = Info.plist; path = "../../build5/src/marsyas_max-msp/CMakeFiles/ibt_.dir/Info.plist"; sourceTree = SOURCE_ROOT; };
+		B4CF300266374B9D9EAC9CB4 /* /Users/nao/git/marsyas/src/marsyas_max-msp/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		E098BCF41FD24BEC951338CC /* /Users/nao/git/marsyas/src/marsyas_max-msp/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		E2025D0D90DB413DAE02F023 /* /Users/nao/git/marsyas/src/marsyas_max-msp/MarMax~.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = "MarMax~.h"; path = "MarMax~.h"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		4C44579B6E7F45869E556993 /* ibt_ */ = {
+			isa = PBXGroup;
+			children = (
+				7935A6F03809485AA3A8B29C /* Source Files */,
+				A2D67BF1A4754CABA9E27172 /* Header Files */,
+				A380DEAC55C94E9E8E8D8419 /* Resources */,
+				B4CF300266374B9D9EAC9CB4 /* /Users/nao/git/marsyas/src/marsyas_max-msp/CMakeLists.txt */,
+			);
+			name = ibt_;
+			sourceTree = "<group>";
+		};
+		7935A6F03809485AA3A8B29C /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				A752AA621B89470BA62D9E98 /* /Users/nao/git/marsyas/src/marsyas_max-msp/IBT~.cpp */,
+				8F73993FD09648BE80DCD6E8 /* /Users/nao/git/marsyas/src/marsyas_max-msp/MarMax~.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		9900301BAD0143D198E417F1 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		A2D67BF1A4754CABA9E27172 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				0036E5615C3E493A94E33825 /* /Users/nao/git/marsyas/src/marsyas_max-msp/IBT~.h */,
+				E2025D0D90DB413DAE02F023 /* /Users/nao/git/marsyas/src/marsyas_max-msp/MarMax~.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		A380DEAC55C94E9E8E8D8419 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A786F559AE8E48B9ADB67A27 /* /Users/nao/git/marsyas/build5/src/marsyas_max-msp/CMakeFiles/ibt_.dir/Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D77F076CD3EC44CC9FDAAB42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14CEE187072E42698059216C /* ibt_ */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCA0F75485674C1896F05ABE /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				9900301BAD0143D198E417F1 /* CMake Rules */,
+				E098BCF41FD24BEC951338CC /* /Users/nao/git/marsyas/src/marsyas_max-msp/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		E5231CA9A91447358E4C7AD0 = {
+			isa = PBXGroup;
+			children = (
+				4C44579B6E7F45869E556993 /* ibt_ */,
+				DCA0F75485674C1896F05ABE /* ALL_BUILD */,
+				D77F076CD3EC44CC9FDAAB42 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE3B0B83A98C4FE7B251C5D0 /* ibt_ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A5F7642B0644C8D85FDFD53 /* Build configuration list for PBXNativeTarget "ibt_" */;
+			buildPhases = (
+				3F23B104C0324D3984F0CE68 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				152F2292F9F0428684001AF7 /* PBXTargetDependency */,
+			);
+			name = ibt_;
+			productName = ibt_;
+			productReference = 14CEE187072E42698059216C /* ibt_ */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE32610E7F1E4400B2E37CF8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0940;
+			};
+			buildConfigurationList = 96375F8E278648DA8058E49D /* Build configuration list for PBXProject "ibt_" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				9D1AF53D776745F0BD654F28 /* Debug */,
+				B877B7764C0B48599DBC7CE8 /* Release */,
+				780E868126D1420D8B3A1CC1 /* MinSizeRel */,
+				5CE054A70E3D4FD9B1C9EA08 /* RelWithDebInfo */,
+				6EFE9025694E4419928761E5 /* Profile */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = E5231CA9A91447358E4C7AD0;
+			projectDirPath = "../../../src/marsyas_max-msp";
+			projectRoot = "";
+			targets = (
+				18332C5B8A8B49B4BD98E9E0 /* ALL_BUILD */,
+				9B349A7CC8A54A53897CE788 /* ZERO_CHECK */,
+				BE3B0B83A98C4FE7B251C5D0 /* ibt_ */,
+				60A0135D722B41A487B582F6 /* install */,
+				F32F42E0229E48479FE983B8 /* package */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		004DC74C6AB34769AD9EF3D4 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		194B1CE774004A1DB43B246C = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		70AEB5090EF84E00BF2B05E2 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		962D0660EFE7416B9D1A948A /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/nao/git/marsyas/build5/src/marsyas_max-msp -f /Users/nao/git/marsyas/build5/src/marsyas_max-msp/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		AA4D8E22776645F6A464E9D2 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/nao/git/marsyas/build5/src/marsyas_max-msp -f /Users/nao/git/marsyas/build5/src/marsyas_max-msp/CMakeScripts/install_postBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		AAE47CEBF46840F5B1081D69 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		DACC9E416AB446A4B7A76161 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/nao/git/marsyas/build5/src/marsyas_max-msp -f /Users/nao/git/marsyas/build5/src/marsyas_max-msp/CMakeScripts/package_postBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		F0654717FD114F218C7FD4B1 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/nao/git/marsyas/build5/src/marsyas_max-msp -f /Users/nao/git/marsyas/build5/src/marsyas_max-msp/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F23B104C0324D3984F0CE68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				864D3185109B4C298694462C /* /Users/nao/git/marsyas/src/marsyas_max-msp/IBT~.cpp */,
+				0029E247A60D4CE9841F0A03 /* /Users/nao/git/marsyas/src/marsyas_max-msp/MarMax~.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0F1000A471D24A719C35A809 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE3B0B83A98C4FE7B251C5D0 /* ibt_ */;
+			targetProxy = 892C2E96F540437F9DD8AA4D /* PBXContainerItemProxy */;
+		};
+		152F2292F9F0428684001AF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B349A7CC8A54A53897CE788 /* ZERO_CHECK */;
+			targetProxy = 956F26F601314EABB0617B26 /* PBXContainerItemProxy */;
+		};
+		1913BAFC2952438CBCEAB742 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18332C5B8A8B49B4BD98E9E0 /* ALL_BUILD */;
+			targetProxy = 3FD3C1748AE846CBB997B73B /* PBXContainerItemProxy */;
+		};
+		CECD6F482973443CB13E21B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18332C5B8A8B49B4BD98E9E0 /* ALL_BUILD */;
+			targetProxy = 27F64C251A6B45C392366FEB /* PBXContainerItemProxy */;
+		};
+		E258FE7B256E41F2873D2D7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B349A7CC8A54A53897CE788 /* ZERO_CHECK */;
+			targetProxy = 9FE550807BE04B6D8E5D7B0A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0B44CE8F42E84D25BFA1124F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/nao/git/marsyas/build5/src/marsyas_max-msp";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		0C7E7997D9E64FCB8BC11BE9 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/nao/git/marsyas/build5/src/marsyas_max-msp";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Profile;
+		};
+		0D88D930FCCB4913A6C0B4F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/nao/git/marsyas/build5/src/marsyas_max-msp";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		1915C41BD6D845E5AAB4D218 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/nao/git/marsyas/build5/src/marsyas_max-msp";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		2606E8342BF742B39BB6B7AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/nao/git/marsyas/build5/src/marsyas_max-msp";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		3763E136E06A4845A4701F2B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/nao/git/marsyas/build5/bin/MinSizeRel;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = ("\"/Users/nao/Documents/Max 7/MaxSDK-5.1.7/c74support/max-includes\"","\"/Users/nao/Documents/Max 7/MaxSDK-5.1.7/c74support/msp-includes\"");
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREFIX_HEADER = "/Users/nao/Documents/Max 7/MaxSDK-5.1.7/c74support/max-includes/macho-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACOSX_CORE__,MAC_VERSION);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (/Users/nao/git/marsyas/src,/Users/nao/git/marsyas/build5,/Users/nao/git/marsyas/build5/src,/Users/nao/git/marsyas/src/otherlibs/RtAudio,/Users/nao/git/marsyas/src/otherlibs/RtMidi,/Users/nao/git/marsyas/src/otherlibs,/Users/nao/git/marsyas/src/otherlibs/libsvm,"\"/Users/nao/Documents/Max 7/MaxSDK-5.1.7/c74support/max-includes\"","\"/Users/nao/Documents/Max 7/MaxSDK-5.1.7/c74support/msp-includes\"");
+				INFOPLIST_FILE = "/Users/nao/Documents/Max 7/MaxSDK-5.1.7/examples/Info.plist";
+				INSTALL_PATH = /Release;
+				LIBRARY_SEARCH_PATHS = "";
+				MACH_O_TYPE = mh_bundle;
+				OTHER_CPLUSPLUSFLAGS = "-std=c++11                     -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Release/libmarsyas.a -framework Carbon -framework CoreAudio -framework CoreMIDI -framework MaxAPI -framework MaxAudioAPI";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ibt_;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/nao/git/marsyas/build5/src/marsyas_max-msp";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+				WRAPPER_EXTENSION = mxo;
+			};
+			name = MinSizeRel;
+		};
+		384A58872DC64255916DE7D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/nao/git/marsyas/build5/src/marsyas_max-msp";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		4D3B4E143F3F4406834987F2 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/nao/git/marsyas/build5/src/marsyas_max-msp";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		5F0B4402196643A98BB3B8A0 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = "/Users/nao/git/marsyas/build5/src/marsyas_max-msp/build";
+			};
+			name = MinSizeRel;
+		};
+		659A60FFD82042D9AE703EE0 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = "/Users/nao/git/marsyas/build5/src/marsyas_max-msp/build";
+			};
+			name = RelWithDebInfo;
+		};
+		6664B33B82DF4E9B809CD7F7 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = "/Users/nao/git/marsyas/build5/src/marsyas_max-msp/build";
+			};
+			name = Profile;
+		};
+		695A379A7D604E7486F8B167 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/nao/git/marsyas/build5/src/marsyas_max-msp";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Profile;
+		};
+		7205EFA4457D4F689F0F0B7F /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/nao/git/marsyas/build5/src/marsyas_max-msp";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Profile;
+		};
+		81BC55436D5546A6BBBE574B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = "/Users/nao/git/marsyas/build5/src/marsyas_max-msp/build";
+			};
+			name = Debug;
+		};
+		837E251DA9A24F68833D7510 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/nao/git/marsyas/build5/src/marsyas_max-msp";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		8970AD28D73D4CDA8555A58A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/nao/git/marsyas/build5/src/marsyas_max-msp";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		96BEFB56682E4361AF4D7B8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/nao/git/marsyas/build5/src/marsyas_max-msp";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		9B23DDE02BC94CF9BCA60459 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/nao/git/marsyas/build5/bin/Profile;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = ("\"/Users/nao/Documents/Max 7/MaxSDK-5.1.7/c74support/max-includes\"","\"/Users/nao/Documents/Max 7/MaxSDK-5.1.7/c74support/msp-includes\"");
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREFIX_HEADER = "/Users/nao/Documents/Max 7/MaxSDK-5.1.7/c74support/max-includes/macho-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACOSX_CORE__,MAC_VERSION);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (/Users/nao/git/marsyas/src,/Users/nao/git/marsyas/build5,/Users/nao/git/marsyas/build5/src,/Users/nao/git/marsyas/src/otherlibs/RtAudio,/Users/nao/git/marsyas/src/otherlibs/RtMidi,/Users/nao/git/marsyas/src/otherlibs,/Users/nao/git/marsyas/src/otherlibs/libsvm,"\"/Users/nao/Documents/Max 7/MaxSDK-5.1.7/c74support/max-includes\"","\"/Users/nao/Documents/Max 7/MaxSDK-5.1.7/c74support/msp-includes\"");
+				INFOPLIST_FILE = "/Users/nao/Documents/Max 7/MaxSDK-5.1.7/examples/Info.plist";
+				INSTALL_PATH = /Release;
+				LIBRARY_SEARCH_PATHS = "";
+				MACH_O_TYPE = mh_bundle;
+				OTHER_CPLUSPLUSFLAGS = "-std=c++11                 -Wall     -fPIC -finstrument-functions  ";
+				OTHER_LDFLAGS = "-lpthread -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Release/libmarsyas.a -framework Carbon -framework CoreAudio -framework CoreMIDI -framework MaxAPI -framework MaxAudioAPI";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ibt_;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/nao/git/marsyas/build5/src/marsyas_max-msp";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+				WRAPPER_EXTENSION = mxo;
+			};
+			name = Profile;
+		};
+		A7254CF315FF4CF0A8913B9F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/nao/git/marsyas/build5/bin/RelWithDebInfo;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = ("\"/Users/nao/Documents/Max 7/MaxSDK-5.1.7/c74support/max-includes\"","\"/Users/nao/Documents/Max 7/MaxSDK-5.1.7/c74support/msp-includes\"");
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREFIX_HEADER = "/Users/nao/Documents/Max 7/MaxSDK-5.1.7/c74support/max-includes/macho-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACOSX_CORE__,MAC_VERSION);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (/Users/nao/git/marsyas/src,/Users/nao/git/marsyas/build5,/Users/nao/git/marsyas/build5/src,/Users/nao/git/marsyas/src/otherlibs/RtAudio,/Users/nao/git/marsyas/src/otherlibs/RtMidi,/Users/nao/git/marsyas/src/otherlibs,/Users/nao/git/marsyas/src/otherlibs/libsvm,"\"/Users/nao/Documents/Max 7/MaxSDK-5.1.7/c74support/max-includes\"","\"/Users/nao/Documents/Max 7/MaxSDK-5.1.7/c74support/msp-includes\"");
+				INFOPLIST_FILE = "/Users/nao/Documents/Max 7/MaxSDK-5.1.7/examples/Info.plist";
+				INSTALL_PATH = /Release;
+				LIBRARY_SEARCH_PATHS = "";
+				MACH_O_TYPE = mh_bundle;
+				OTHER_CPLUSPLUSFLAGS = "-std=c++11                        -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Release/libmarsyas.a -framework Carbon -framework CoreAudio -framework CoreMIDI -framework MaxAPI -framework MaxAudioAPI";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ibt_;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/nao/git/marsyas/build5/src/marsyas_max-msp";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+				WRAPPER_EXTENSION = mxo;
+			};
+			name = RelWithDebInfo;
+		};
+		B9AEAB9E3FCE41FD9E7EC602 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/nao/git/marsyas/build5/src/marsyas_max-msp";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		BAA28B822D57404B8270F480 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/nao/git/marsyas/build5/src/marsyas_max-msp";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Profile;
+		};
+		C38A0D39F0ED4885B5855964 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/nao/git/marsyas/build5/src/marsyas_max-msp";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		CF70AE9F195849A1851C145A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/nao/git/marsyas/build5/src/marsyas_max-msp";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		D1CEDA39A1DF4EF69064F743 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/nao/git/marsyas/build5/bin/Debug;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = ("\"/Users/nao/Documents/Max 7/MaxSDK-5.1.7/c74support/max-includes\"","\"/Users/nao/Documents/Max 7/MaxSDK-5.1.7/c74support/msp-includes\"");
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "/Users/nao/Documents/Max 7/MaxSDK-5.1.7/c74support/max-includes/macho-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACOSX_CORE__,MAC_VERSION);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (/Users/nao/git/marsyas/src,/Users/nao/git/marsyas/build5,/Users/nao/git/marsyas/build5/src,/Users/nao/git/marsyas/src/otherlibs/RtAudio,/Users/nao/git/marsyas/src/otherlibs/RtMidi,/Users/nao/git/marsyas/src/otherlibs,/Users/nao/git/marsyas/src/otherlibs/libsvm,"\"/Users/nao/Documents/Max 7/MaxSDK-5.1.7/c74support/max-includes\"","\"/Users/nao/Documents/Max 7/MaxSDK-5.1.7/c74support/msp-includes\"");
+				INFOPLIST_FILE = "/Users/nao/Documents/Max 7/MaxSDK-5.1.7/examples/Info.plist";
+				INSTALL_PATH = /Release;
+				LIBRARY_SEARCH_PATHS = "";
+				MACH_O_TYPE = mh_bundle;
+				OTHER_CPLUSPLUSFLAGS = "-std=c++11                     ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Release/libmarsyas.a -framework Carbon -framework CoreAudio -framework CoreMIDI -framework MaxAPI -framework MaxAudioAPI";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ibt_;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/nao/git/marsyas/build5/src/marsyas_max-msp";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+				WRAPPER_EXTENSION = mxo;
+			};
+			name = Debug;
+		};
+		E73F886C2FD8470F88958E6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/nao/git/marsyas/build5/src/marsyas_max-msp";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		EA09B286BE014879BBE5C4D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/nao/git/marsyas/build5/bin/Release;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = ("\"/Users/nao/Documents/Max 7/MaxSDK-5.1.7/c74support/max-includes\"","\"/Users/nao/Documents/Max 7/MaxSDK-5.1.7/c74support/msp-includes\"");
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREFIX_HEADER = "/Users/nao/Documents/Max 7/MaxSDK-5.1.7/c74support/max-includes/macho-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACOSX_CORE__,MAC_VERSION);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (/Users/nao/git/marsyas/src,/Users/nao/git/marsyas/build5,/Users/nao/git/marsyas/build5/src,/Users/nao/git/marsyas/src/otherlibs/RtAudio,/Users/nao/git/marsyas/src/otherlibs/RtMidi,/Users/nao/git/marsyas/src/otherlibs,/Users/nao/git/marsyas/src/otherlibs/libsvm,"\"/Users/nao/Documents/Max 7/MaxSDK-5.1.7/c74support/max-includes\"","\"/Users/nao/Documents/Max 7/MaxSDK-5.1.7/c74support/msp-includes\"");
+				INFOPLIST_FILE = "/Users/nao/Documents/Max 7/MaxSDK-5.1.7/examples/Info.plist";
+				INSTALL_PATH = /Release;
+				LIBRARY_SEARCH_PATHS = "";
+				MACH_O_TYPE = mh_bundle;
+				OTHER_CPLUSPLUSFLAGS = "-std=c++11                     -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Release/libmarsyas.a -framework Carbon -framework CoreAudio -framework CoreMIDI -framework MaxAPI -framework MaxAudioAPI";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ibt_;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/nao/git/marsyas/build5/src/marsyas_max-msp";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+				WRAPPER_EXTENSION = mxo;
+			};
+			name = Release;
+		};
+		EA2B17D75A10455195C5B66F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = "/Users/nao/git/marsyas/build5/src/marsyas_max-msp/build";
+			};
+			name = Release;
+		};
+		F5EF93C27627480AAD25382C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/nao/git/marsyas/build5/src/marsyas_max-msp";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		F6EB17C324EB41F2A8C2C9D1 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/nao/git/marsyas/build5/src/marsyas_max-msp";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		FF27EFF018334EC78A0FA303 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/nao/git/marsyas/build5/src/marsyas_max-msp";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3558751A32964892B4449D33 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8970AD28D73D4CDA8555A58A /* Debug */,
+				0B44CE8F42E84D25BFA1124F /* Release */,
+				837E251DA9A24F68833D7510 /* MinSizeRel */,
+				B9AEAB9E3FCE41FD9E7EC602 /* RelWithDebInfo */,
+				0C7E7997D9E64FCB8BC11BE9 /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4C676B92E7A5493C8945004E /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				384A58872DC64255916DE7D4 /* Debug */,
+				F5EF93C27627480AAD25382C /* Release */,
+				4D3B4E143F3F4406834987F2 /* MinSizeRel */,
+				F6EB17C324EB41F2A8C2C9D1 /* RelWithDebInfo */,
+				695A379A7D604E7486F8B167 /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7A5F7642B0644C8D85FDFD53 /* Build configuration list for PBXNativeTarget "ibt_" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1CEDA39A1DF4EF69064F743 /* Debug */,
+				EA09B286BE014879BBE5C4D7 /* Release */,
+				3763E136E06A4845A4701F2B /* MinSizeRel */,
+				A7254CF315FF4CF0A8913B9F /* RelWithDebInfo */,
+				9B23DDE02BC94CF9BCA60459 /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8AAF4962A2214F9A9C994153 /* Build configuration list for PBXAggregateTarget "package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D88D930FCCB4913A6C0B4F6 /* Debug */,
+				E73F886C2FD8470F88958E6D /* Release */,
+				FF27EFF018334EC78A0FA303 /* MinSizeRel */,
+				CF70AE9F195849A1851C145A /* RelWithDebInfo */,
+				BAA28B822D57404B8270F480 /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		96375F8E278648DA8058E49D /* Build configuration list for PBXProject "ibt_" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81BC55436D5546A6BBBE574B /* Debug */,
+				EA2B17D75A10455195C5B66F /* Release */,
+				5F0B4402196643A98BB3B8A0 /* MinSizeRel */,
+				659A60FFD82042D9AE703EE0 /* RelWithDebInfo */,
+				6664B33B82DF4E9B809CD7F7 /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DCADF12F03D94849BC68B618 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2606E8342BF742B39BB6B7AF /* Debug */,
+				96BEFB56682E4361AF4D7B8C /* Release */,
+				C38A0D39F0ED4885B5855964 /* MinSizeRel */,
+				1915C41BD6D845E5AAB4D218 /* RelWithDebInfo */,
+				7205EFA4457D4F689F0F0B7F /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE32610E7F1E4400B2E37CF8 /* Project object */;
+}

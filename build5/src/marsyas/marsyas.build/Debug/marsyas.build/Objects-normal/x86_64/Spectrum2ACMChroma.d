@@ -1,0 +1,30 @@
+dependencies: \
+  /Users/nao/git/marsyas/src/marsyas/marsystems/Spectrum2ACMChroma.cpp \
+  /Users/nao/git/marsyas/src/marsyas/marsystems/Spectrum2ACMChroma.h \
+  /Users/nao/git/marsyas/src/marsyas/system/MarSystem.h \
+  /Users/nao/git/marsyas/src/marsyas/common_header.h \
+  /Users/nao/git/marsyas/src/marsyas/types.h \
+  /Users/nao/git/marsyas/src/marsyas/MrsLog.h \
+  /Users/nao/git/marsyas/build5/src/marsyas/export.h \
+  /Users/nao/git/marsyas/src/marsyas/system/MarControl.h \
+  /Users/nao/git/marsyas/src/marsyas/realvec.h \
+  /Users/nao/git/marsyas/src/marsyas/system/MarControlValue.h \
+  /Users/nao/git/marsyas/src/marsyas/system/MarControlAccessor.h \
+  /Users/nao/git/marsyas/src/marsyas/marostring.h \
+  /Users/nao/git/marsyas/src/marsyas/Conversions.h \
+  /Users/nao/git/marsyas/src/marsyas/sched/EvEvent.h \
+  /Users/nao/git/marsyas/src/marsyas/sched/Repeat.h \
+  /Users/nao/git/marsyas/src/marsyas/sched/TmControlValue.h \
+  /Users/nao/git/marsyas/src/marsyas/sched/TmTime.h \
+  /Users/nao/git/marsyas/src/marsyas/sched/Scheduler.h \
+  /Users/nao/git/marsyas/src/marsyas/sched/TmTimer.h \
+  /Users/nao/git/marsyas/src/marsyas/sched/TmParam.h \
+  /Users/nao/git/marsyas/src/marsyas/Heap.h \
+  /Users/nao/git/marsyas/src/marsyas/system/MarSystemManager.h \
+  /Users/nao/git/marsyas/src/marsyas/marsystems/Series.h \
+  /Users/nao/git/marsyas/src/marsyas/marsystems/MedianFilter.h \
+  /Users/nao/git/marsyas/src/marsyas/marsystems/PeakInObservation.h \
+  /Users/nao/git/marsyas/src/marsyas/marsystems/Negative.h \
+  /Users/nao/git/marsyas/src/marsyas/marsystems/Signum.h \
+  /Users/nao/git/marsyas/src/marsyas/marsystems/F0Analysis.h \
+  /Users/nao/git/marsyas/src/marsyas/marsystems/Pitch2Chroma.h

@@ -25,3 +25,4 @@ build/src/marsyas/marsyas.build/
 *.xcuserstate
 build/src/marsyas_max-msp/marsyas.build/Release/ibt_.build/dgph
 *.xcuserstate
+.DS_Store
