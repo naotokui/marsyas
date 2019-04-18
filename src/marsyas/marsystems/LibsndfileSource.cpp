@@ -63,7 +63,7 @@ void LibsndfileSource::myProcess(realvec&, realvec& out)
 
   if (sizeof(mrs_real) == 8)
   {
-    outputFrameCount = sf_readf_double(m_file, out.getData(), out.getCols());
+//    outputFrameCount = sf_readf_double(m_file, out.getData(), out.getCols());
   }
   // FIXME: This should be conditionally compiled
   // based on how mrs_real is defined
@@ -90,8 +90,8 @@ void LibsndfileSource::myProcess(realvec&, realvec& out)
 
 void LibsndfileSource::close()
 {
-  if (m_file)
-    sf_close(m_file);
+//  if (m_file)
+//    sf_close(m_file);
   m_file = 0;
 
   m_filename.clear();
@@ -103,14 +103,14 @@ bool LibsndfileSource::open(const string & filename)
 
   m_filename = filename;
 
-  m_fileInfo.format = 0;
-  m_file = sf_open(filename.c_str(), SFM_READ, &m_fileInfo);
-
-  if (!m_file)
-  {
-    MRSERR("Error opening file: " << filename);
-    return false;
-  }
+//  m_fileInfo.format = 0;
+//  m_file = sf_open(filename.c_str(), SFM_READ, &m_fileInfo);
+//
+//  if (!m_file)
+//  {
+//    MRSERR("Error opening file: " << filename);
+//    return false;
+//  }
 
   return true;
 }
